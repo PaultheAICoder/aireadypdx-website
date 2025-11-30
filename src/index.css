@@ -238,7 +238,12 @@ section {
   display: flex;
   align-items: center;
   padding-top: 80px;
-  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-sage) 100%);
+  background:
+    linear-gradient(135deg, rgba(11, 61, 46, 0.85) 0%, rgba(31, 58, 95, 0.8) 100%),
+    url('/images/hero/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   overflow: hidden;
 }
@@ -250,7 +255,7 @@ section {
   right: 0;
   width: 50%;
   height: 100%;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230B3D2E' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   opacity: 0.5;
 }
 
@@ -262,17 +267,19 @@ section {
 
 .hero h1 {
   margin-bottom: 1.5rem;
+  color: var(--color-white);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-subheading {
   font-size: 1.25rem;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 1rem;
 }
 
 .hero-support {
   font-size: 1rem;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2rem;
 }
 
@@ -285,17 +292,29 @@ section {
 
 .hero-location {
   font-size: 0.9rem;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-badge {
   display: inline-block;
-  background: var(--color-primary);
+  background: var(--color-accent);
   color: var(--color-white);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.875rem;
   margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn-secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.hero .btn-secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* Why Us Section */
