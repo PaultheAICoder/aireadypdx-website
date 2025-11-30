@@ -540,12 +540,12 @@ function App() {
               <div className="form-group">
                 <label htmlFor="website">Website (optional)</label>
                 <input
-                  type="url"
+                  type="text"
                   id="website"
                   name="website"
                   value={formData.website}
                   onChange={handleInputChange}
-                  placeholder="https://"
+                  placeholder="yourcompany.com"
                 />
               </div>
               <div className="form-group">
