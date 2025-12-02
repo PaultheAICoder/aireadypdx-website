@@ -113,17 +113,23 @@ function App() {
     }))
   }
 
+  const [formError, setFormError] = useState(null)
+  const [formLoading, setFormLoading] = useState(false)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
-    // Using Formspree - replace YOUR_FORM_ID with actual Formspree form ID
+    setFormError(null)
+    setFormLoading(true)
+
     try {
-      const response = await fetch('https://formspree.io/f/myzrkrbo', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       })
+
       if (response.ok) {
         setFormSubmitted(true)
         setFormData({
@@ -135,11 +141,15 @@ function App() {
           message: '',
           freeSession: false
         })
+      } else {
+        const data = await response.json()
+        setFormError(data.error || 'Something went wrong. Please try again.')
       }
     } catch (error) {
       console.error('Form submission error:', error)
-      // For demo purposes, show success anyway
-      setFormSubmitted(true)
+      setFormError('Unable to send message. Please email us directly at hello@aireadypdx.com')
+    } finally {
+      setFormLoading(false)
     }
   }
 
@@ -701,8 +711,13 @@ function App() {
                 />
                 <label htmlFor="freeSession">I'm interested in a $50 AI Readiness Session (90% off for first 100 clients)</label>
               </div>
-              <button type="submit" className="btn btn-primary form-submit">
-                Send message
+              {formError && (
+                <div className="form-error">
+                  {formError}
+                </div>
+              )}
+              <button type="submit" className="btn btn-primary form-submit" disabled={formLoading}>
+                {formLoading ? 'Sending...' : 'Send message'}
               </button>
             </form>
           )}
