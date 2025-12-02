@@ -158,7 +158,7 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="nav-logo">
-            AI <span>Ready</span> PDX
+            <img src="/images/logos/logo-nav.png" alt="AI Ready PDX" className="nav-logo-img" />
           </a>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li><a href="#why-us" onClick={(e) => scrollToSection(e, 'why-us')}>Why Us</a></li>
@@ -669,7 +669,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <div className="footer-logo">AI <span>Ready</span> PDX</div>
+              <img src="/images/logos/logo-full.png" alt="AI Ready PDX" className="footer-logo-img" />
               <p className="footer-tagline">Powered by Vital Enterprises</p>
             </div>
             <div className="footer-links">
