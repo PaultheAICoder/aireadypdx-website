@@ -179,7 +179,7 @@ function App() {
       <section id="home" className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>Is Your Business Ready for<br />2026: The Year of AI?</h1>
+            <h1>2026 is the Year of AI.<br />Let's get you ready.</h1>
             <p className="hero-subheading">
               AI has moved from bleeding edge to business essential. AI Ready PDX, powered by Vital Enterprises' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
             </p>
@@ -234,7 +234,7 @@ function App() {
               </div>
               <h3>We know tech and business</h3>
               <p>
-                We understand how companies actually run — how work gets scheduled, how revenue flows, and where things get stuck. We translate AI into process improvements, not buzzwords.
+                We understand how companies actually run: how work gets scheduled, how revenue flows, and where things get stuck. We translate AI into process improvements, not buzzwords.
               </p>
             </div>
             <div className="card why-us-card">
@@ -243,7 +243,7 @@ function App() {
               </div>
               <h3>We've already been doing this</h3>
               <p>
-                We've been working with AI-enabled products and tools for several years and are already helping organizations in the region — including regional nonprofits — design and implement AI strategies.
+                We've been working with AI-enabled products and tools for several years and are already helping organizations in the region design and implement AI strategies.
               </p>
             </div>
             <div className="card why-us-card">
@@ -299,7 +299,7 @@ function App() {
                   <th>
                     <img src="/images/icons/client-manufacturing.png" alt="Manufacturers & Distributors" className="industry-icon" />
                     <span>Manufacturing</span>
-                    <small>Inventory, Private AI Focus</small>
+                    <small>Machinery, Fabrication, Assembly</small>
                   </th>
                 </tr>
               </thead>
@@ -396,7 +396,7 @@ function App() {
                 </tr>
                 <tr className="service-category confidential-category">
                   <td colSpan="7">
-                    <img src="/images/icons/service-data.png" alt="Confidential AI" className="category-icon" />
+                    <img src="/images/icons/service-confidential.png" alt="Confidential AI" className="category-icon" />
                     Confidential AI
                   </td>
                 </tr>
@@ -431,7 +431,7 @@ function App() {
             <div className="confidential-ai-text">
               <h2>Need to Keep Your AI Off the Public Internet?</h2>
               <p>
-                For organizations with sensitive data—legal, medical, financial, or proprietary—we offer on-premise and air-gapped solutions where your data never leaves your building. Ask us about Confidential AI options.
+                For organizations with sensitive data (legal, medical, financial, or proprietary), we offer on-premise and air-gapped solutions where your data never leaves your building. Ask us about Confidential AI options.
               </p>
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-secondary">
                 Learn About Confidential AI
@@ -495,7 +495,7 @@ function App() {
                 <li><strong>Managed Services:</strong> We run your marketing—content, posting, analytics</li>
                 <li><strong>Custom Solutions:</strong> AI applications and integrations</li>
                 <li><strong>AI Kickstart Sprint:</strong> Roadmap + first pilot</li>
-                <li><strong>On-Prem AI:</strong> Air-gapped deployment</li>
+                <li><strong>On-Premise AI:</strong> Air-gapped deployment</li>
               </ul>
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-secondary">Let's Talk</a>
             </div>
@@ -526,6 +526,19 @@ function App() {
             </div>
             <div className="approach-phase">
               <div className="phase-icon">
+                <Icons.Users />
+              </div>
+              <h3>Train & Plan</h3>
+              <ul>
+                <li>Executive AI briefings</li>
+                <li>Team training sessions</li>
+                <li>Roadmap development</li>
+                <li>Ongoing strategy support</li>
+                <li>Quarterly State of AI updates</li>
+              </ul>
+            </div>
+            <div className="approach-phase">
+              <div className="phase-icon">
                 <Icons.Settings />
               </div>
               <h3>Implement</h3>
@@ -534,19 +547,7 @@ function App() {
                 <li>Content automation tools</li>
                 <li>Cold outreach systems</li>
                 <li>Custom AI applications</li>
-                <li>Secure on-prem AI</li>
-              </ul>
-            </div>
-            <div className="approach-phase">
-              <div className="phase-icon">
-                <Icons.Users />
-              </div>
-              <h3>Train</h3>
-              <ul>
-                <li>Executive AI briefings</li>
-                <li>Team training sessions</li>
-                <li>Ongoing strategy support</li>
-                <li>Quarterly State of AI updates</li>
+                <li>Secure on-premise AI</li>
               </ul>
             </div>
           </div>
@@ -573,7 +574,7 @@ function App() {
               </div>
             </div>
             <div className={`faq-item ${openFaq === 2 ? 'open' : ''}`} onClick={() => toggleFaq(2)}>
-              <h3>Do you offer on-premises AI solutions?</h3>
+              <h3>Do you offer on-premise AI solutions?</h3>
               <div className="faq-answer">
                 <p>Yes. For organizations with strict data privacy or compliance requirements, we can deploy local AI appliances on your network. Your data never leaves your building, and you get the same capabilities as cloud AI without the privacy concerns.</p>
               </div>
@@ -581,13 +582,13 @@ function App() {
             <div className={`faq-item ${openFaq === 3 ? 'open' : ''}`} onClick={() => toggleFaq(3)}>
               <h3>What does an AI Readiness Session cover?</h3>
               <div className="faq-answer">
-                <p>In our 60–90 minute session (just $50 for the first 100 clients), we review how your organization runs today, identify 3–5 specific AI opportunities with rough ROI estimates, recommend whether on-prem, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.</p>
+                <p>In our 60-90 minute session (just $50 for the first 100 clients), we review how your organization runs today, identify 3-5 specific AI opportunities with rough ROI estimates, recommend whether on-premise, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 4 ? 'open' : ''}`} onClick={() => toggleFaq(4)}>
               <h3>Is AI safe for sensitive data like legal or medical records?</h3>
               <div className="faq-answer">
-                <p>It can be, with the right setup. We offer both on-premises solutions where data never leaves your network, and locked-down cloud environments with private networking. We also train your team on what's safe to use AI for and what should stay in your core systems.</p>
+                <p>It can be, with the right setup. We offer both on-premise solutions where data never leaves your network, and locked-down cloud environments with private networking. We also train your team on what's safe to use AI for and what should stay in your core systems.</p>
               </div>
             </div>
           </div>
@@ -672,14 +673,10 @@ function App() {
               <img src="/images/logos/logo-full.png" alt="AI Ready PDX" className="footer-logo-img" />
               <p className="footer-tagline">Powered by Vital Enterprises</p>
             </div>
-            <div className="footer-links">
-              <a href="#services" onClick={(e) => scrollToSection(e, 'services')}>Services</a>
-              <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a>
-              <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
-            </div>
             <div className="footer-contact">
-              <p>hello@aireadypdx.com</p>
-              <p>Portland, Oregon</p>
+              <p><a href="mailto:hello@aireadypdx.com">hello@aireadypdx.com</a></p>
+              <p>3855 SW 153rd Drive, Beaverton, OR</p>
+              <p><a href="tel:+15036190505">(503) 619-0505</a></p>
             </div>
           </div>
           <div className="footer-bottom">
