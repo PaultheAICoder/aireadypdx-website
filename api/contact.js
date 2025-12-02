@@ -38,8 +38,9 @@ ${message}
     `.trim();
 
     // Send email via Resend
+    // Using Resend's default domain until aireadypdx.com is verified
     const { data, error } = await resend.emails.send({
-      from: 'AI Ready PDX <hello@aireadypdx.com>',
+      from: 'AI Ready PDX <onboarding@resend.dev>',
       to: ['hello@aireadypdx.com'],
       replyTo: email,
       subject: `New Contact from ${name}`,
