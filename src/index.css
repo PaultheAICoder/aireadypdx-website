@@ -121,9 +121,38 @@ section {
   padding: var(--section-padding);
 }
 
+/* Tighter spacing for specific sections */
+.hero {
+  padding-bottom: 3rem;
+}
+
+.why-us {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.services-table-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.confidential-ai {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pricing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.approach {
+  padding-top: 3rem;
+}
+
 .section-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section-header p {
@@ -938,21 +967,25 @@ section {
 
 .faq-item {
   border-bottom: 1px solid var(--color-background);
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
+  cursor: pointer;
 }
 
 .faq-item h3 {
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--color-primary);
+  margin-bottom: 0;
 }
 
 .faq-item h3::after {
   content: '+';
   font-size: 1.5rem;
   color: var(--color-accent);
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
 }
 
 .faq-item.open h3::after {
@@ -960,8 +993,15 @@ section {
 }
 
 .faq-answer {
-  padding-top: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
   color: var(--color-text-light);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding-top: 1rem;
 }
 
 /* Contact Section */

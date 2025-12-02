@@ -9,10 +9,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, company, website, teamSize, message, freeSession } = req.body;
+    const { name, email, message, freeSession } = req.body;
 
     // Validate required fields
-    if (!name || !email || !company || !message) {
+    if (!name || !email || !message) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
@@ -21,9 +21,6 @@ export default async function handler(req, res) {
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Company:</strong> ${company}</p>
-      ${website ? `<p><strong>Website:</strong> ${website}</p>` : ''}
-      ${teamSize ? `<p><strong>Team Size:</strong> ${teamSize}</p>` : ''}
       <p><strong>Interested in $50 AI Readiness Session:</strong> ${freeSession ? 'Yes' : 'No'}</p>
       <h3>Message:</h3>
       <p>${message.replace(/\n/g, '<br>')}</p>
@@ -34,9 +31,6 @@ New Contact Form Submission
 
 Name: ${name}
 Email: ${email}
-Company: ${company}
-${website ? `Website: ${website}` : ''}
-${teamSize ? `Team Size: ${teamSize}` : ''}
 Interested in $50 AI Readiness Session: ${freeSession ? 'Yes' : 'No'}
 
 Message:
@@ -48,7 +42,7 @@ ${message}
       from: 'AI Ready PDX <hello@aireadypdx.com>',
       to: ['hello@aireadypdx.com'],
       replyTo: email,
-      subject: `New Contact: ${name} from ${company}`,
+      subject: `New Contact from ${name}`,
       html: emailHtml,
       text: emailText,
     });

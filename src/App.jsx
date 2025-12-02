@@ -82,9 +82,6 @@ function App() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
-    website: '',
-    teamSize: '',
     message: '',
     freeSession: false
   })
@@ -115,6 +112,11 @@ function App() {
 
   const [formError, setFormError] = useState(null)
   const [formLoading, setFormLoading] = useState(false)
+  const [openFaq, setOpenFaq] = useState(null)
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -135,9 +137,6 @@ function App() {
         setFormData({
           name: '',
           email: '',
-          company: '',
-          website: '',
-          teamSize: '',
           message: '',
           freeSession: false
         })
@@ -288,6 +287,7 @@ function App() {
                     <small>Dental, Legal, Accounting</small>
                   </th>
                   <th>
+                    <img src="/images/icons/client-civic.png" alt="Civic & Education" className="industry-icon" />
                     <span>Civic & Education</span>
                     <small>Schools, Churches, Public Safety</small>
                   </th>
@@ -358,7 +358,7 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td></td>
                   <td></td>
-                  <td><span className="check"><Icons.Check /></span></td>
+                  <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr>
@@ -366,7 +366,7 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td><span className="check"><Icons.Check /></span></td>
+                  <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
@@ -405,7 +405,7 @@ function App() {
                   <td></td>
                   <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td></td>
+                  <td><span className="check"><Icons.Check /></span></td>
                   <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
@@ -553,60 +553,38 @@ function App() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="about">
-        <div className="container">
-          <div className="section-header">
-            <h2>About AI Ready PDX</h2>
-          </div>
-          <div className="about-content">
-            <p>
-              AI Ready PDX is part of the <strong>Vital Enterprises</strong> family of companies in the Pacific Northwest.
-            </p>
-            <p>
-              Our oldest company, <strong>VTM</strong>, has spent more than 30 years leading global technology consortiums and standards efforts. <strong>Novus Labs</strong>, our engineering lab, has spent 17 years working on complex consumer electronics products for leading brands.
-            </p>
-            <p>
-              We've been working with AI and AI-enabled products for several years, and we're already helping organizations in the region — including local nonprofits and portfolio companies — design and implement AI strategies.
-            </p>
-            <p>
-              AI Ready PDX is how we offer that experience more broadly to Portland-area businesses and nonprofits. We focus on:
-            </p>
-            <ul className="about-list">
-              <li>Practical projects that ship in weeks, not years</li>
-              <li>Clear explanation of what AI can and cannot do for you</li>
-              <li>A pace of adoption that respects your people, culture, and risk profile</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section id="faq" className="faq">
+      <section id="about" className="faq">
         <div className="container">
           <div className="section-header">
             <h2>Frequently Asked Questions</h2>
           </div>
           <div className="faq-list">
-            <div className="faq-item">
-              <h3>What kinds of businesses does AI Ready PDX work with?</h3>
+            <div className={`faq-item ${openFaq === 0 ? 'open' : ''}`} onClick={() => toggleFaq(0)}>
+              <h3>Who is AI Ready PDX?</h3>
+              <div className="faq-answer">
+                <p>AI Ready PDX is part of Vital Enterprises, with 30+ years leading global technology consortiums and 17 years building complex products for leading brands. We help Portland-area businesses and nonprofits adopt AI practically—projects that ship in weeks, clear explanations of what AI can do, and a pace that respects your culture.</p>
+              </div>
+            </div>
+            <div className={`faq-item ${openFaq === 1 ? 'open' : ''}`} onClick={() => toggleFaq(1)}>
+              <h3>What kinds of businesses do you work with?</h3>
               <div className="faq-answer">
                 <p>We work primarily with small to mid-sized businesses and nonprofits in the Portland metro and Pacific Northwest. Our clients include home service companies, coffee roasters, professional practices like dental and legal offices, small manufacturers, and community organizations.</p>
               </div>
             </div>
-            <div className="faq-item">
+            <div className={`faq-item ${openFaq === 2 ? 'open' : ''}`} onClick={() => toggleFaq(2)}>
               <h3>Do you offer on-premises AI solutions?</h3>
               <div className="faq-answer">
                 <p>Yes. For organizations with strict data privacy or compliance requirements, we can deploy local AI appliances on your network. Your data never leaves your building, and you get the same capabilities as cloud AI without the privacy concerns.</p>
               </div>
             </div>
-            <div className="faq-item">
+            <div className={`faq-item ${openFaq === 3 ? 'open' : ''}`} onClick={() => toggleFaq(3)}>
               <h3>What does an AI Readiness Session cover?</h3>
               <div className="faq-answer">
                 <p>In our 60–90 minute session (just $50 for the first 100 clients), we review how your organization runs today, identify 3–5 specific AI opportunities with rough ROI estimates, recommend whether on-prem, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.</p>
               </div>
             </div>
-            <div className="faq-item">
+            <div className={`faq-item ${openFaq === 4 ? 'open' : ''}`} onClick={() => toggleFaq(4)}>
               <h3>Is AI safe for sensitive data like legal or medical records?</h3>
               <div className="faq-answer">
                 <p>It can be, with the right setup. We offer both on-premises solutions where data never leaves your network, and locked-down cloud environments with private networking. We also train your team on what's safe to use AI for and what should stay in your core systems.</p>
@@ -651,44 +629,6 @@ function App() {
                   onChange={handleInputChange}
                   required
                 />
-              </div>
-              <div className="form-group">
-                <label htmlFor="company">Company / organization *</label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="website">Website (optional)</label>
-                <input
-                  type="text"
-                  id="website"
-                  name="website"
-                  value={formData.website}
-                  onChange={handleInputChange}
-                  placeholder="yourcompany.com"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="teamSize">Approximate team size (optional)</label>
-                <select
-                  id="teamSize"
-                  name="teamSize"
-                  value={formData.teamSize}
-                  onChange={handleInputChange}
-                >
-                  <option value="">Select...</option>
-                  <option value="1-5">1-5 employees</option>
-                  <option value="6-20">6-20 employees</option>
-                  <option value="21-50">21-50 employees</option>
-                  <option value="51-100">51-100 employees</option>
-                  <option value="100+">100+ employees</option>
-                </select>
               </div>
               <div className="form-group">
                 <label htmlFor="message">What would you like AI to help with? *</label>
