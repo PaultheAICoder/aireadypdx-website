@@ -12,6 +12,11 @@ export default function NewsletterPopup() {
   const [errorMessage, setErrorMessage] = useState('')
 
   useEffect(() => {
+    // Don't show popup if Supabase isn't configured
+    if (!supabase) {
+      return
+    }
+
     // Check if user has already dismissed the popup
     const dismissed = localStorage.getItem(DISMISSED_KEY)
     if (dismissed) {
