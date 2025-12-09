@@ -252,9 +252,9 @@ function App() {
               <div className="icon">
                 <Icons.MessageSquare />
               </div>
-              <h3>Plain language, practical outcomes</h3>
+              <h3>People and culture come first</h3>
               <p>
-                We explain things in everyday terms, focus on measurable wins, and help your team get comfortable with AI instead of overwhelmed by it.
+                We empower your team to do more and create more value with AI, not replace them. Our goal is expanding capabilities while respecting your culture.
               </p>
             </div>
           </div>
