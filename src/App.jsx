@@ -167,7 +167,7 @@ function App() {
             <li><a href="#confidential-ai" onClick={(e) => scrollToSection(e, 'confidential-ai')}>Confidential AI</a></li>
             <li><a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a></li>
             <li><a href="#approach" onClick={(e) => scrollToSection(e, 'approach')}>Approach</a></li>
-            <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></li>
+            <li><a href="#about" onClick={(e) => { scrollToSection(e, 'about'); setOpenFaq(0); }}>About</a></li>
             <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary nav-cta">Book Your $50 Session</a></li>
           </ul>
           <div className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
