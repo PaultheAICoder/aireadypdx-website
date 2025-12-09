@@ -242,7 +242,7 @@ function App() {
               <div className="icon">
                 <Icons.CheckCircle />
               </div>
-              <h3>We've already been doing this</h3>
+              <h3>We're already doing this</h3>
               <p>
                 We've been working with AI-enabled products and tools for several years and are already helping organizations in the region design and implement AI strategies.
               </p>
