@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ChatWidget from './components/ChatWidget/ChatWidget'
+import NewsletterPopup from './components/NewsletterPopup'
 
 // Icons as simple SVG components
 const Icons = {
@@ -688,6 +689,9 @@ function App() {
 
       {/* Chat Widget */}
       <ChatWidget />
+
+      {/* Newsletter Popup */}
+      <NewsletterPopup />
     </div>
   )
 }
