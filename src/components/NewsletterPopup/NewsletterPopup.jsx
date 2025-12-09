@@ -64,8 +64,7 @@ export default function NewsletterPopup() {
           {
             email: email.toLowerCase().trim(),
             subscriber_hash: subscriberHash,
-            is_active: false, // Will be set to true after email verification
-            source: 'website_popup'
+            is_active: false // Will be set to true after email verification
           }
         ])
 
