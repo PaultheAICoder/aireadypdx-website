@@ -475,12 +475,20 @@ section {
 }
 
 .industry-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   margin-bottom: 0.5rem;
   border-radius: 8px;
-  object-fit: cover;
-  image-rendering: -webkit-optimize-contrast;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.industry-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-accent);
 }
 
 .services-table td {
@@ -511,13 +519,17 @@ section {
 }
 
 .category-icon {
-  width: 24px;
-  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   vertical-align: middle;
   margin-right: 0.5rem;
-  border-radius: 4px;
-  object-fit: cover;
-  image-rendering: -webkit-optimize-contrast;
+}
+
+.category-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
 }
 
 .services-table .check {
