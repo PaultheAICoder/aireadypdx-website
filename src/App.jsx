@@ -383,7 +383,7 @@ function App() {
                   </th>
                   <th>
                     <span className="industry-icon"><Icons.Clipboard /></span>
-                    <span>Professional Practices</span>
+                    <span>Professional</span>
                     <small>Dental, Legal, Accounting</small>
                   </th>
                   <th>

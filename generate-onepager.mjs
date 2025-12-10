@@ -11,7 +11,6 @@ const iconHomeServices = fs.readFileSync(path.join(__dirname, 'public/images/ico
 const iconFood = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-food.png')).toString('base64');
 const iconProfessional = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-professional.png')).toString('base64');
 const iconCivic = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-civic.png')).toString('base64');
-const iconNonprofit = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-nonprofit.png')).toString('base64');
 const iconManufacturing = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-manufacturing.png')).toString('base64');
 
 const html = `
@@ -47,7 +46,7 @@ const html = `
     }
 
     .logo-section img {
-      height: 45px;
+      height: 65px;
     }
 
     .contact-info {
@@ -80,7 +79,7 @@ const html = `
     .hero p {
       font-size: 10px;
       color: #4A5568;
-      max-width: 520px;
+      max-width: 620px;
       margin: 0 auto;
     }
 
@@ -120,6 +119,14 @@ const html = `
       color: #4A5568;
     }
 
+    .pillar-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: #0B3D2E;
+      stroke-width: 2;
+      fill: none;
+    }
+
     .services-table {
       margin-bottom: 15px;
     }
@@ -137,6 +144,11 @@ const html = `
       text-align: center;
       vertical-align: top;
       font-weight: 600;
+      border-left: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .services-table th:first-child {
+      border-left: none;
     }
 
     .services-table th img {
@@ -267,23 +279,29 @@ const html = `
   </div>
 
   <div class="hero">
-    <h1>Is Your Business Ready for<br><span>2026: The Year of AI?</span></h1>
+    <h1><span>2026 is the Year of AI.</span><br>Let's get you ready.</h1>
     <p>AI has moved from bleeding edge to business essential. <strong>AI Ready PDX</strong>, powered by Vital Enterprises' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.</p>
   </div>
 
   <div class="pillars">
     <div class="pillar">
-      <div class="pillar-icon">30+</div>
-      <h3>Years of Tech Leadership</h3>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/></svg>
+      </div>
+      <h3>30+ Years Tech Leadership</h3>
       <p>VTM & Novus Labs experience across<br>global tech consortiums</p>
     </div>
     <div class="pillar">
-      <div class="pillar-icon">PDX</div>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
       <h3>Local Portland Presence</h3>
       <p>We're your neighbors, invested in<br>the community you serve</p>
     </div>
     <div class="pillar">
-      <div class="pillar-icon">🔒</div>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
       <h3>Privacy-First Options</h3>
       <p>On-premise & air-gapped solutions<br>for sensitive data</p>
     </div>
@@ -315,61 +333,56 @@ const html = `
             <span class="industry-sub">Schools, Churches,<br>Public Safety</span>
           </th>
           <th>
-            <img src="data:image/png;base64,${iconNonprofit}" alt="">
-            <span class="industry-name">Community Orgs</span>
-            <span class="industry-sub">Nonprofits</span>
-          </th>
-          <th>
             <img src="data:image/png;base64,${iconManufacturing}" alt="">
             <span class="industry-name">Manufacturing</span>
-            <span class="industry-sub">Inventory,<br>Private AI</span>
+            <span class="industry-sub">Machinery, Fabrication,<br>Assembly</span>
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr class="category"><td colspan="7">Marketing & Sales</td></tr>
+        <tr class="category"><td colspan="6">Marketing & Sales</td></tr>
         <tr>
-          <td class="service-name">Web presence (SEO, AEO/GEO)</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+          <td class="service-name">Web presence<br>(SEO, AEO/GEO)</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
           <td class="service-name">Content & collateral</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
-          <td class="service-name">Outreach (email, voice, social)</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td></td>
+          <td class="service-name">Outreach<br>(email, voice, social)</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td></td>
         </tr>
-        <tr class="category"><td colspan="7">Operations</td></tr>
+        <tr class="category"><td colspan="6">Operations</td></tr>
         <tr>
           <td class="service-name">Scheduling & intake</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
           <td class="service-name">Inventory & supply chain</td>
-          <td class="check">✓</td><td class="check">✓</td><td></td><td></td><td></td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td></td><td></td><td class="check">✓</td>
         </tr>
         <tr>
           <td class="service-name">Process automation</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td></td><td class="check">✓</td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td></td><td class="check">✓</td>
         </tr>
-        <tr class="category"><td colspan="7">Management</td></tr>
+        <tr class="category"><td colspan="6">Management</td></tr>
         <tr>
           <td class="service-name">Dashboards & analytics</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
           <td class="service-name">Reporting & insights</td>
-          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+          <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
-        <tr class="category category-dark"><td colspan="7">Confidential AI</td></tr>
+        <tr class="category category-dark"><td colspan="6">Confidential AI</td></tr>
         <tr>
           <td class="service-name">On-premise deployment</td>
-          <td></td><td></td><td class="check">✓</td><td class="check">✓</td><td></td><td class="check">✓</td>
+          <td></td><td></td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
           <td class="service-name">Private cloud inference</td>
-          <td></td><td></td><td class="check">✓</td><td class="check">✓</td><td></td><td class="check">✓</td>
+          <td></td><td></td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
       </tbody>
     </table>
@@ -390,7 +403,9 @@ const html = `
 
 async function generatePDF() {
   console.log('Launching browser...');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
 
   console.log('Setting content...');
@@ -398,14 +413,14 @@ async function generatePDF() {
 
   console.log('Generating PDF...');
   await page.pdf({
-    path: path.join(__dirname, 'AI-Ready-PDX-OnePager.pdf'),
+    path: path.join(__dirname, 'ai-onepager-table-v1.1.pdf'),
     format: 'Letter',
     printBackground: true,
     margin: { top: '0', right: '0', bottom: '0', left: '0' }
   });
 
   await browser.close();
-  console.log('✓ PDF saved: AI-Ready-PDX-OnePager.pdf');
+  console.log('✓ PDF saved: ai-onepager-table-v1.1.pdf');
 }
 
 generatePDF().catch(console.error);
