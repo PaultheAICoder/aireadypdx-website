@@ -281,7 +281,7 @@ function App() {
           <div className="hero-content">
             <h1>2026 is the Year of AI.<br />Let's get you ready.</h1>
             <p className="hero-subheading">
-              AI has moved from bleeding edge to business essential. AI Ready PDX, powered by Vital Enterprises' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
+              AI has moved from bleeding edge to business essential. AI Ready PDX, powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
             </p>
             <div className="hero-buttons">
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary btn-large">
@@ -325,7 +325,7 @@ function App() {
               </div>
               <h3>Decades of tech leadership</h3>
               <p>
-                AI Ready PDX is part of the Vital Enterprises family. Our companies include VTM, which has led global technology consortiums for over 30 years, and Novus Labs, which has spent 17 years working on complex consumer electronics products.
+                AI Ready PDX is part of the <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a> family. Our companies include <a href="https://vtmgroup.com" target="_blank" rel="noopener noreferrer">VTM</a>, which has led global technology consortiums for over 30 years, and <a href="https://novuslabs.com" target="_blank" rel="noopener noreferrer">Novus Labs</a>, which has spent 17 years working on complex consumer electronics products.
               </p>
             </div>
             <div className="card why-us-card">
@@ -649,7 +649,7 @@ function App() {
             <div className={`faq-item ${openFaq === 0 ? 'open' : ''}`} onClick={() => toggleFaq(0)}>
               <h3>Who is AI Ready PDX?</h3>
               <div className="faq-answer">
-                <p>AI Ready PDX is part of Vital Enterprises, with 30+ years leading global technology consortiums and 17 years building complex products for leading brands. We help Portland-area businesses and nonprofits adopt AI practically—projects that ship in weeks, clear explanations of what AI can do, and a pace that respects your culture.</p>
+                <p>AI Ready PDX is part of <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>, with 30+ years leading global technology consortiums and 17 years building complex products for leading brands. We help Portland-area businesses and nonprofits adopt AI practically—projects that ship in weeks, clear explanations of what AI can do, and a pace that respects your culture.</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 1 ? 'open' : ''}`} onClick={() => toggleFaq(1)}>
@@ -756,7 +756,7 @@ function App() {
           <div className="footer-content">
             <div className="footer-brand">
               <img src="/images/logos/logo-full.png" alt="AI Ready PDX" className="footer-logo-img" />
-              <p className="footer-tagline">Powered by Vital Enterprises</p>
+              <p className="footer-tagline">Powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a></p>
             </div>
             <div className="footer-contact">
               <p><a href="mailto:hello@aireadypdx.com">hello@aireadypdx.com</a></p>
