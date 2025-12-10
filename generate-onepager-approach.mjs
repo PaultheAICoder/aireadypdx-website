@@ -53,6 +53,7 @@ const html = `
     .contact-info a {
       color: #0B3D2E;
       text-decoration: none;
+      display: inline-block;
     }
 
     .hero {
