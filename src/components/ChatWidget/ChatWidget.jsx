@@ -154,6 +154,14 @@ function ChatWidget() {
               <div className="chat-welcome">
                 <h4>Got questions about AI for your business?</h4>
                 <p>Ask me about our services, pricing, or how AI can help your organization.</p>
+                {!leadCaptured && (
+                  <button
+                    className="connect-btn"
+                    onClick={() => setShowLeadForm(true)}
+                  >
+                    Connect with our team
+                  </button>
+                )}
               </div>
             )}
 
@@ -170,6 +178,15 @@ function ChatWidget() {
                 <span></span>
                 <span></span>
                 <span></span>
+              </div>
+            )}
+
+            {/* Connect prompt after a few messages */}
+            {messages.length >= 2 && !showLeadForm && !leadCaptured && (
+              <div className="connect-prompt">
+                <button onClick={() => setShowLeadForm(true)}>
+                  Want us to follow up? Share your info
+                </button>
               </div>
             )}
 

@@ -108,7 +108,7 @@ ${conversationSummary}
 
   await resend.emails.send({
     from: 'AI Ready PDX <onboarding@resend.dev>',
-    to: ['pbrown@vital-enterprises.com'],
+    to: ['hello@aireadypdx.com'],
     replyTo: leadData.email,
     subject: `[Chat Lead] ${leadData.name} - ${leadData.interest}`,
     html: emailHtml,
