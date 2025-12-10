@@ -1165,6 +1165,10 @@ section {
   color: var(--color-white);
 }
 
+.footer-bottom p {
+  color: var(--color-white);
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .grid-2,
