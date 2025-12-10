@@ -552,7 +552,7 @@ function App() {
               <h3>AI Training & Quick Wins</h3>
               <p className="price">$1,500<span>/quarter</span></p>
               <ul>
-                <li>90 minutes training (1 session or 2x 45-min)</li>
+                <li>90 minute training<br />(1 session or 2x 45-min)</li>
                 <li>Website & web presence review</li>
                 <li>One "quick win" deliverable per quarter</li>
                 <li>Email support between sessions</li>
