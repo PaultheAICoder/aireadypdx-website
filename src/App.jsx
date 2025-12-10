@@ -577,7 +577,7 @@ function App() {
               <p className="price">Custom</p>
               <p className="price-note">Variable based on scope</p>
               <ul>
-                <li><strong>Managed Services:</strong> We run your marketing—content, posting, analytics</li>
+                <li><strong>Marketing Services:</strong> content, posting, analytics, and branding</li>
                 <li><strong>Custom Solutions:</strong> AI applications and integrations</li>
                 <li><strong>AI Kickstart Sprint:</strong> Roadmap + first pilot</li>
                 <li><strong>On-Premise AI:</strong> Air-gapped deployment</li>
