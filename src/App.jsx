@@ -406,7 +406,7 @@ function App() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="service-name">Web presence<br />(SEO, AEO/GEO)</td>
+                  <td className="service-name">Web presence<br />(SEO, AEO, GEO)</td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>

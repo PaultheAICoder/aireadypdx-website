@@ -5,13 +5,15 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Read images as base64
+// Read logo as base64
 const logoBase64 = fs.readFileSync(path.join(__dirname, 'public/images/logos/logo-full.png')).toString('base64');
-const iconHomeServices = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-home-services.png')).toString('base64');
-const iconFood = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-food.png')).toString('base64');
-const iconProfessional = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-professional.png')).toString('base64');
-const iconCivic = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-civic.png')).toString('base64');
-const iconManufacturing = fs.readFileSync(path.join(__dirname, 'public/images/icons/client-manufacturing.png')).toString('base64');
+
+// SVG icons matching the website
+const iconHome = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>`;
+const iconCoffee = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>`;
+const iconClipboard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>`;
+const iconGraduationCap = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>`;
+const iconFactory = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`;
 
 const html = `
 <!DOCTYPE html>
@@ -151,14 +153,19 @@ const html = `
       border-left: none;
     }
 
-    .services-table th img {
+    .services-table th .industry-icon {
       width: 26px;
       height: 26px;
-      border-radius: 4px;
       margin-bottom: 3px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .services-table th .industry-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: #2BBBAD;
     }
 
     .services-table th .industry-name {
@@ -313,27 +320,27 @@ const html = `
         <tr>
           <th class="service-col"></th>
           <th>
-            <img src="data:image/png;base64,${iconHomeServices}" alt="">
+            <span class="industry-icon">${iconHome}</span>
             <span class="industry-name">Field Services</span>
             <span class="industry-sub">HVAC, Plumbing,<br>Landscaping</span>
           </th>
           <th>
-            <img src="data:image/png;base64,${iconFood}" alt="">
+            <span class="industry-icon">${iconCoffee}</span>
             <span class="industry-name">Retail & Hospitality</span>
             <span class="industry-sub">Coffee, Restaurants,<br>Shops</span>
           </th>
           <th>
-            <img src="data:image/png;base64,${iconProfessional}" alt="">
+            <span class="industry-icon">${iconClipboard}</span>
             <span class="industry-name">Professional</span>
             <span class="industry-sub">Dental, Legal,<br>Accounting</span>
           </th>
           <th>
-            <img src="data:image/png;base64,${iconCivic}" alt="">
+            <span class="industry-icon">${iconGraduationCap}</span>
             <span class="industry-name">Civic & Education</span>
             <span class="industry-sub">Schools, Churches,<br>Public Safety</span>
           </th>
           <th>
-            <img src="data:image/png;base64,${iconManufacturing}" alt="">
+            <span class="industry-icon">${iconFactory}</span>
             <span class="industry-name">Manufacturing</span>
             <span class="industry-sub">Machinery, Fabrication,<br>Assembly</span>
           </th>
@@ -342,7 +349,7 @@ const html = `
       <tbody>
         <tr class="category"><td colspan="6">Marketing & Sales</td></tr>
         <tr>
-          <td class="service-name">Web presence<br>(SEO, AEO/GEO)</td>
+          <td class="service-name">Web presence<br>(SEO, AEO, GEO)</td>
           <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
         </tr>
         <tr>
