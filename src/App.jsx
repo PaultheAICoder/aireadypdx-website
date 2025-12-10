@@ -613,11 +613,11 @@ function App() {
               <div className="phase-icon">
                 <Icons.Users />
               </div>
-              <h3>Train & Plan</h3>
+              <h3>Train</h3>
               <ul>
                 <li>Executive AI briefings</li>
                 <li>Team training sessions</li>
-                <li>Roadmap development</li>
+                <li>Agentic coding tools</li>
                 <li>Ongoing strategy support</li>
                 <li>Quarterly State of AI updates</li>
               </ul>

@@ -41,7 +41,7 @@ const html = `
     }
 
     .logo-section img {
-      height: 50px;
+      height: 70px;
     }
 
     .contact-info {
@@ -74,7 +74,7 @@ const html = `
     .hero p {
       font-size: 11px;
       color: #4A5568;
-      max-width: 560px;
+      max-width: 680px;
       margin: 0 auto;
     }
 
@@ -146,6 +146,14 @@ const html = `
       font-size: 16px;
       font-weight: 700;
       color: #0B3D2E;
+    }
+
+    .pillar-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: #0B3D2E;
+      stroke-width: 2;
+      fill: none;
     }
 
     .pillar h3 {
@@ -226,7 +234,7 @@ const html = `
   </div>
 
   <div class="hero">
-    <h1>Is Your Business Ready for<br><span>2026: The Year of AI?</span></h1>
+    <h1><span>2026 is the Year of AI.</span><br>Let's get you ready.</h1>
     <p>AI has moved from bleeding edge to business essential. <strong>AI Ready PDX</strong>, powered by Vital Enterprises' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.</p>
   </div>
 
@@ -242,40 +250,46 @@ const html = `
       </ul>
     </div>
     <div class="approach-column">
+      <h3>Train</h3>
+      <ul>
+        <li>Executive AI briefings</li>
+        <li>Team training sessions</li>
+        <li>Agentic coding tools</li>
+        <li>Ongoing strategy support</li>
+        <li>Quarterly State of AI updates</li>
+      </ul>
+    </div>
+    <div class="approach-column">
       <h3>Implement</h3>
       <ul>
         <li>Chatbots & voice agents</li>
         <li>Content automation tools</li>
-        <li>Outreach systems (email, voice, social)</li>
+        <li>Cold outreach systems</li>
         <li>Custom AI applications</li>
-        <li>Secure on-premise AI deployment</li>
-      </ul>
-    </div>
-    <div class="approach-column">
-      <h3>Train</h3>
-      <ul>
-        <li>Executive AI briefings</li>
-        <li>Team training workshops</li>
-        <li>Agentic coding tools</li>
-        <li>Ongoing strategy support</li>
-        <li>Quarterly State of AI updates</li>
+        <li>Secure on-premise AI</li>
       </ul>
     </div>
   </div>
 
   <div class="pillars">
     <div class="pillar">
-      <div class="pillar-icon">30+</div>
-      <h3>Years of Tech Leadership</h3>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/></svg>
+      </div>
+      <h3>30+ Years Tech Leadership</h3>
       <p>VTM & Novus Labs experience across<br>global tech consortiums</p>
     </div>
     <div class="pillar">
-      <div class="pillar-icon">PDX</div>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
       <h3>Local Portland Presence</h3>
       <p>We're your neighbors, invested in<br>the community you serve</p>
     </div>
     <div class="pillar">
-      <div class="pillar-icon">🔒</div>
+      <div class="pillar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
       <h3>Privacy-First Options</h3>
       <p>On-premise & air-gapped solutions<br>for sensitive data</p>
     </div>
@@ -296,7 +310,9 @@ const html = `
 
 async function generatePDF() {
   console.log('Launching browser...');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
 
   console.log('Setting content...');
@@ -304,14 +320,14 @@ async function generatePDF() {
 
   console.log('Generating PDF...');
   await page.pdf({
-    path: path.join(__dirname, 'ai-onepager-approach.pdf'),
+    path: path.join(__dirname, 'ai-onepager-approach-v1.1.pdf'),
     format: 'Letter',
     printBackground: true,
     margin: { top: '0', right: '0', bottom: '0', left: '0' }
   });
 
   await browser.close();
-  console.log('✓ PDF saved: ai-onepager-approach.pdf');
+  console.log('✓ PDF saved: ai-onepager-approach-v1.1.pdf');
 }
 
 generatePDF().catch(console.error);
