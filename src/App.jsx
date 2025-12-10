@@ -392,11 +392,6 @@ function App() {
                     <small>Schools, Churches,<br />Public Safety</small>
                   </th>
                   <th>
-                    <span className="industry-icon"><Icons.Heart /></span>
-                    <span>Community Orgs</span>
-                    <small>Nonprofits</small>
-                  </th>
-                  <th>
                     <span className="industry-icon"><Icons.Factory /></span>
                     <span>Manufacturing</span>
                     <small>Machinery, Fabrication, Assembly</small>
@@ -405,14 +400,13 @@ function App() {
               </thead>
               <tbody>
                 <tr className="service-category">
-                  <td colSpan="7">
+                  <td colSpan="6">
                     <span className="category-icon"><Icons.Megaphone /></span>
                     Marketing & Sales
                   </td>
                 </tr>
                 <tr>
                   <td className="service-name">Web presence (SEO, AEO/GEO)</td>
-                  <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
@@ -426,7 +420,6 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr>
                   <td className="service-name">Outreach (email, voice, social)</td>
@@ -434,18 +427,16 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td><span className="check"><Icons.Check /></span></td>
                   <td></td>
                 </tr>
                 <tr className="service-category">
-                  <td colSpan="7">
+                  <td colSpan="6">
                     <span className="category-icon"><Icons.Cog /></span>
                     Operations
                   </td>
                 </tr>
                 <tr>
                   <td className="service-name">Scheduling & intake</td>
-                  <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
@@ -458,7 +449,6 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td></td>
                   <td></td>
-                  <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr>
@@ -468,17 +458,15 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr className="service-category">
-                  <td colSpan="7">
+                  <td colSpan="6">
                     <span className="category-icon"><Icons.BarChart /></span>
                     Management
                   </td>
                 </tr>
                 <tr>
                   <td className="service-name">Dashboards & analytics</td>
-                  <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
@@ -492,10 +480,9 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr className="service-category confidential-category">
-                  <td colSpan="7">
+                  <td colSpan="6">
                     <span className="category-icon"><Icons.Lock /></span>
                     Confidential AI
                   </td>
@@ -506,7 +493,6 @@ function App() {
                   <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr>
@@ -515,7 +501,6 @@ function App() {
                   <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
-                  <td></td>
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
               </tbody>

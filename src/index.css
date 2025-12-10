@@ -457,7 +457,7 @@ section {
   font-weight: 600;
 }
 
-.services-table th span {
+.services-table th > span:not(.industry-icon) {
   display: block;
   font-size: 0.85rem;
 }
