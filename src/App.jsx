@@ -406,7 +406,7 @@ function App() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="service-name">Web presence (SEO, AEO/GEO)</td>
+                  <td className="service-name">Web presence<br />(SEO, AEO/GEO)</td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
@@ -422,7 +422,7 @@ function App() {
                   <td><span className="check"><Icons.Check /></span></td>
                 </tr>
                 <tr>
-                  <td className="service-name">Outreach (email, voice, social)</td>
+                  <td className="service-name">Outreach<br />(email, voice, social)</td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
                   <td><span className="check"><Icons.Check /></span></td>
