@@ -502,6 +502,8 @@ section {
   font-weight: 500;
   color: var(--color-text);
   padding-left: 1rem;
+  min-width: 200px;
+  white-space: nowrap;
 }
 
 .services-table tr.service-category td {
