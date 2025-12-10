@@ -298,7 +298,7 @@ const html = `
   <div class="cta-section">
     <h2>AI Readiness Session — <span class="old-price">$500</span> <span class="price">$50</span> (First 100 Clients)</h2>
     <p>60-90 minute consultation. Custom recommendations. AI Opportunities Snapshot document.</p>
-    <div class="email">→ hello@aireadypdx.com</div>
+    <a href="mailto:hello@aireadypdx.com" class="email">→ hello@aireadypdx.com</a>
   </div>
 
   <div class="footer">
@@ -320,14 +320,14 @@ async function generatePDF() {
 
   console.log('Generating PDF...');
   await page.pdf({
-    path: path.join(__dirname, 'ai-onepager-approach-v1.1.pdf'),
+    path: path.join(__dirname, 'ai-onepager-approach-v1.2.pdf'),
     format: 'Letter',
     printBackground: true,
     margin: { top: '0', right: '0', bottom: '0', left: '0' }
   });
 
   await browser.close();
-  console.log('✓ PDF saved: ai-onepager-approach-v1.1.pdf');
+  console.log('✓ PDF saved: ai-onepager-approach-v1.2.pdf');
 }
 
 generatePDF().catch(console.error);

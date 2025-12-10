@@ -202,6 +202,11 @@ function App() {
     }
   }
 
+  const openNewsletterPopup = (e) => {
+    e.preventDefault()
+    window.dispatchEvent(new CustomEvent('openNewsletterPopup'))
+  }
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target
     setFormData(prev => ({
@@ -308,6 +313,9 @@ function App() {
                 <span>Privacy-First Options</span>
               </div>
             </div>
+            <p className="hero-newsletter">
+              <a href="#" onClick={openNewsletterPopup}>Subscribe to our newsletter</a> for practical AI insights.
+            </p>
           </div>
         </div>
       </section>
@@ -762,6 +770,7 @@ function App() {
               <p><a href="mailto:hello@aireadypdx.com">hello@aireadypdx.com</a></p>
               <p>3855 SW 153rd Drive, Beaverton, OR</p>
               <p><a href="tel:+15036190505">(503) 619-0505</a></p>
+              <p><a href="#" onClick={openNewsletterPopup} className="footer-newsletter-link">Subscribe to our newsletter</a></p>
             </div>
           </div>
           <div className="footer-bottom">

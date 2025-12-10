@@ -369,6 +369,22 @@ section {
   font-size: 0.95rem;
 }
 
+.hero-newsletter {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+.hero-newsletter a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.hero-newsletter a:hover {
+  color: var(--color-white);
+}
+
 /* Button variations */
 .btn-large {
   padding: 1.25rem 2rem;
@@ -1158,6 +1174,11 @@ section {
 .footer-contact p {
   color: var(--color-white);
   margin-bottom: 0.25rem;
+}
+
+.footer-newsletter-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .footer-bottom {

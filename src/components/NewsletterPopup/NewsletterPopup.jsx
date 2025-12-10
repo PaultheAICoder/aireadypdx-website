@@ -31,6 +31,19 @@ export default function NewsletterPopup() {
     return () => clearTimeout(timer)
   }, [])
 
+  // Listen for custom event to open the popup manually
+  useEffect(() => {
+    const handleOpenNewsletter = () => {
+      setStatus('idle')
+      setEmail('')
+      setErrorMessage('')
+      setIsVisible(true)
+    }
+
+    window.addEventListener('openNewsletterPopup', handleOpenNewsletter)
+    return () => window.removeEventListener('openNewsletterPopup', handleOpenNewsletter)
+  }, [])
+
   const handleDismiss = () => {
     setIsVisible(false)
     localStorage.setItem(DISMISSED_KEY, 'true')
