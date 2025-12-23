@@ -13,7 +13,7 @@
 export const novusStatus = {
   // UPDATE THIS TIMESTAMP EVERY TIME YOU MAKE CHANGES
   // Format: "Month Day, Year at H:MM AM/PM PST"
-  lastUpdated: "December 23, 2025 at 10:00 AM PST",
+  lastUpdated: "December 23, 2025 at 11:00 AM PST",
 
   // Current overall status
   // "operational" = All systems working
