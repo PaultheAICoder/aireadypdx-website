@@ -310,7 +310,7 @@ export default function NovusMigrationStatus() {
           Quick link: <strong>tinyurl.com/novus25</strong>
         </p>
         <p className="novus-footer-version">
-          v1.0.1 | Built: {__BUILD_TIME__}
+          v1.0.2 | Built: {__BUILD_TIME__}
         </p>
       </footer>
     </div>

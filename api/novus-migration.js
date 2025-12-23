@@ -43,8 +43,8 @@ ${problemDescription}
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'Novus IT Support <onboarding@resend.dev>',
-      to: ['pbrown@vital-enterprises.com'],
+      from: 'Novus IT Support <novus-support@aireadypdx.com>',
+      to: ['sgonzales@vtmgroup.com', 'tgates@vtmgroup.com', 'pbrown@vital-enterprises.com'],
       replyTo: alternateEmail || 'noreply@aireadypdx.com',
       subject: `[Novus Migration] Support Request from ${name}`,
       html: emailHtml,
