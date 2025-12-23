@@ -27,11 +27,11 @@ export const novusStatus = {
   // Status details - use emojis for quick visual scanning
   // Prefix options: "✅" = working, "⚠️" = partial/in-progress, "❌" = not working
   details: [
-    "✅ Email access restored for most users",
-    "✅ Microsoft Teams is operational",
-    "⚠️ OneDrive file sync in progress - may take 2-4 hours",
-    "⚠️ Some shared drives being migrated",
-    "❌ Legacy VPN temporarily unavailable"
+    "✅ Email access requires new credentials. If you don't have your new credentials, please fill out contact form below",
+    "✅ Web apps are working - go to office.com and login with your new Novuslabs.com credentials to access them",
+    "⚠️ Sharepoint data has been preserved and you will have access once you are logged in with new credentials",
+    "⚠️ If you need your Teams chat history, please fill out the form below",
+    "❌ New Novuslabs.com credentials are required to access wifi"
   ],
 
   // Workarounds and tips for users
@@ -45,8 +45,8 @@ export const novusStatus = {
       description: "Use teams.microsoft.com or the Teams desktop app"
     },
     {
-      title: "Files",
-      description: "For urgent file access, contact IT at the numbers below"
+      title: "Desktop Apps",
+      description: "For MS Desktop Apps, the easiest path is to start with a clean laptop image. If you have not yet received your new laptop, please fill out contact form below"
     }
   ],
 
