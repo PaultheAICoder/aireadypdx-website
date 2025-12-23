@@ -45,7 +45,7 @@ ${problemDescription}
     const { data, error } = await resend.emails.send({
       from: 'Novus IT Support <novus-support@aireadypdx.com>',
       to: ['sgonzales@vtmgroup.com', 'tgates@vtmgroup.com', 'pbrown@vital-enterprises.com'],
-      replyTo: alternateEmail || 'noreply@aireadypdx.com',
+      replyTo: alternateEmail || 'hello@aireadypdx.com',
       subject: `[Novus Migration] Support Request from ${name}`,
       html: emailHtml,
       text: emailText,
