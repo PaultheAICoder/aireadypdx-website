@@ -476,6 +476,12 @@
   margin-top: 0.5rem !important;
 }
 
+.novus-footer-version {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-top: 0.5rem !important;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .novus-header {
