@@ -22,7 +22,7 @@ export const novusStatus = {
   currentStatus: "partial-outage",
 
   // Brief summary (1-2 sentences, shown prominently)
-  summary: "Tenant migration is in progress. Email access has been restored for most users.",
+  summary: "Tenant migration completed. Use new credentials to access web apps. Desktop app access is WIP.",
 
   // Status details - use emojis for quick visual scanning
   // Prefix options: "✅" = working, "⚠️" = partial/in-progress, "❌" = not working
@@ -50,11 +50,6 @@ export const novusStatus = {
     }
   ],
 
-  // IT Contact information (shown on the page)
-  itContacts: [
-    { name: "IT Support Line", phone: "(503) 555-0123" },
-    { name: "After Hours", phone: "(503) 555-0124" }
-  ],
 
   // Optional: Link to more detailed documentation
   moreInfoLink: null, // Set to URL string if needed, e.g., "https://..."
