@@ -183,8 +183,7 @@ export default function NovusMigrationStatus() {
           <div className="novus-container">
             <h2>Having Problems? Let Us Know</h2>
             <p className="novus-form-intro">
-              If you're experiencing issues not covered above, please fill out this form
-              and our IT team will contact you.
+              Please use the form below to contact IT if you are having any issues related to the migration and our IT team will contact you.
             </p>
 
             {formSubmitted ? (
@@ -280,7 +279,7 @@ export default function NovusMigrationStatus() {
                     onChange={handleInputChange}
                     required
                     rows="4"
-                    placeholder="Please describe what's happening, any error messages you see, and what you were trying to do..."
+                    placeholder="Please describe what's happening, any error messages you see, any access issues you're having..."
                   />
                 </div>
 
