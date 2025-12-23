@@ -1,0 +1,24 @@
+# robots.txt for aireadypdx.com
+
+User-agent: *
+Allow: /
+Disallow: /novus-migration-status
+
+# Block all AI/LLM crawlers from Novus page
+User-agent: GPTBot
+Disallow: /novus-migration-status
+
+User-agent: ChatGPT-User
+Disallow: /novus-migration-status
+
+User-agent: Google-Extended
+Disallow: /novus-migration-status
+
+User-agent: CCBot
+Disallow: /novus-migration-status
+
+User-agent: anthropic-ai
+Disallow: /novus-migration-status
+
+User-agent: Claude-Web
+Disallow: /novus-migration-status
