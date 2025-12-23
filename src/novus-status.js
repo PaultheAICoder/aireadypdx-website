@@ -29,9 +29,10 @@ export const novusStatus = {
   details: [
     "✅ Email access requires new credentials. If you don't have your new credentials, please fill out contact form below",
     "✅ Web apps are working - go to office.com and login with your new Novuslabs.com credentials to access them",
-    "⚠️ Sharepoint data has been preserved and you will have access once you are logged in with new credentials",
+    "⚠️ SharePoint data has been preserved and you will have access once you are logged in with new credentials - new SharePoint is ",
     "⚠️ If you need your Teams chat history, please fill out the form below",
-    "❌ New Novuslabs.com credentials are required to access wifi"
+    "⚠️ New Novuslabs.com credentials are required to access wifi"
+    "❌ Additional instructions are WIP for Mac users - please fill out form below if you are a Mac user"
   ],
 
   // Workarounds and tips for users
@@ -42,11 +43,11 @@ export const novusStatus = {
     },
     {
       title: "Teams",
-      description: "Use teams.microsoft.com or the Teams desktop app"
+      description: "Use teams.microsoft.com"
     },
     {
-      title: "Desktop Apps",
-      description: "For MS Desktop Apps, the easiest path is to start with a clean laptop image. If you have not yet received your new laptop, please fill out contact form below"
+      title: "New Laptops are available",
+      description: "If you have not received your new laptop, On-site users can stop by the IT room to pick one up. Otherwise please fill out form below"
     }
   ],
 
