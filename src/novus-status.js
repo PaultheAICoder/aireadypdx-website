@@ -29,7 +29,7 @@ export const novusStatus = {
   details: [
     "✅ Email access requires new credentials. If you don't have your new credentials, please fill out contact form below",
     "✅ Web apps are working - go to office.com and login with your new Novuslabs.com credentials to access them",
-    "⚠️ SharePoint data has been preserved and you will have access once you are logged in with new credentials - new SharePoint is ",
+    "⚠️ SharePoint data has been preserved and you will have access once you are logged in with new credentials",
     "⚠️ If you need your Teams chat history, please fill out the form below",
     "⚠️ New Novuslabs.com credentials are required to access wifi",
     "❌ Additional instructions are WIP for Mac users - please fill out form below if you are a Mac user"
