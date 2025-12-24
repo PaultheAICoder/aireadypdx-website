@@ -775,6 +775,7 @@ function App() {
           </div>
           <div className="footer-bottom">
             <p>&copy; 2025 AI Ready PDX. All rights reserved.</p>
+            <p className="build-info">v1.0.0 • Built {__BUILD_TIME__}</p>
           </div>
         </div>
       </footer>
