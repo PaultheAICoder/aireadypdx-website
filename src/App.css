@@ -78,6 +78,48 @@ select:focus {
   cursor: not-allowed;
 }
 
+/* Limited Time Offer styling */
+.limited-time-offer {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.hero-buttons .limited-time-offer {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.pricing-card .limited-time-offer {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.faq-answer .limited-time-offer {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.checkbox-group + .limited-time-offer {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.limited-time-offer-section {
+  background: var(--color-background);
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.limited-time-offer-section .limited-time-offer {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 /* Print styles */
 @media print {
   .navbar,

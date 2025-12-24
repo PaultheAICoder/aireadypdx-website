@@ -290,8 +290,9 @@ function App() {
             </p>
             <div className="hero-buttons">
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary btn-large">
-                Book Your AI Readiness Session — <s>$500</s> $50 <span className="btn-note">(First 100 Clients)</span>
+                Book Your AI Readiness Session — <s>$500</s> $50 <span className="btn-note">(First 100 Clients)*</span>
               </a>
+              <p className="limited-time-offer">* Limited Time Offer</p>
             </div>
             <div className="hero-pillars">
               <div className="hero-pillar">
@@ -548,7 +549,8 @@ function App() {
             <div className="pricing-card">
               <h3>AI Readiness Session</h3>
               <p className="price"><s>$500</s> <strong>$50</strong></p>
-              <p className="price-note">90% off for first 100 clients</p>
+              <p className="price-note">90% off for first 100 clients*</p>
+              <p className="limited-time-offer">* Limited Time Offer</p>
               <ul>
                 <li>60-90 minute consultation</li>
                 <li>Custom recommendations</li>
@@ -675,7 +677,8 @@ function App() {
             <div className={`faq-item ${openFaq === 3 ? 'open' : ''}`} onClick={() => toggleFaq(3)}>
               <h3>What does an AI Readiness Session cover?</h3>
               <div className="faq-answer">
-                <p>In our 60-90 minute session (just $50 for the first 100 clients), we review how your organization runs today, identify 3-5 specific AI opportunities with rough ROI estimates, recommend whether on-premise, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.</p>
+                <p>In our 60-90 minute session (just $50 for the first 100 clients*), we review how your organization runs today, identify 3-5 specific AI opportunities with rough ROI estimates, recommend whether on-premise, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.</p>
+                <p className="limited-time-offer">* Limited Time Offer</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 4 ? 'open' : ''}`} onClick={() => toggleFaq(4)}>
@@ -743,8 +746,9 @@ function App() {
                   checked={formData.freeSession}
                   onChange={handleInputChange}
                 />
-                <label htmlFor="freeSession">I'm interested in a $50 AI Readiness Session (90% off for first 100 clients)</label>
+                <label htmlFor="freeSession">I'm interested in a $50 AI Readiness Session (90% off for first 100 clients)*</label>
               </div>
+              <p className="limited-time-offer">* Limited Time Offer</p>
               {formError && (
                 <div className="form-error">
                   {formError}
@@ -757,6 +761,13 @@ function App() {
           )}
         </div>
       </section>
+
+      {/* Limited Time Offer Note */}
+      <div className="limited-time-offer-section">
+        <div className="container">
+          <p className="limited-time-offer">* Limited Time Offer</p>
+        </div>
+      </div>
 
       {/* Footer */}
       <footer className="footer">
