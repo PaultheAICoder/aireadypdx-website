@@ -40,7 +40,7 @@ ${message}
     // Send email via Resend
     const { data, error } = await resend.emails.send({
       from: 'AI Ready PDX <onboarding@resend.dev>',
-      to: ['pbrown@vital-enterprises.com'],
+      to: ['pbrown@vital-enterprises.com', 'johnwebber@novuslabs.com', 'rhoppes@vital-enterprises.com'],
       replyTo: email,
       subject: `[AI Ready PDX] New Contact from ${name}`,
       html: emailHtml,
