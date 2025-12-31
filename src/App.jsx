@@ -354,36 +354,36 @@ function App() {
               <div className="icon">
                 <Icons.Award />
               </div>
-              <h3>Decades of tech leadership</h3>
+              <h3>Why choose AI Ready PDX for AI consulting?</h3>
               <p>
-                AI Ready PDX is part of the <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a> family. Our companies include <a href="https://vtmgroup.com" target="_blank" rel="noopener noreferrer">VTM</a>, which has led global technology consortiums for over 30 years, and <a href="https://novuslabs.com" target="_blank" rel="noopener noreferrer">Novus Labs</a>, which has spent 17 years working on complex consumer electronics products.
+                AI Ready PDX brings 30+ years of proven technology leadership through <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>. Our companies include <a href="https://vtmgroup.com" target="_blank" rel="noopener noreferrer">VTM</a>, leading global technology consortiums for over 30 years, and <a href="https://novuslabs.com" target="_blank" rel="noopener noreferrer">Novus Labs</a>, with 17 years building complex consumer electronics products.
               </p>
             </div>
             <div className="card why-us-card">
               <div className="icon">
                 <Icons.Briefcase />
               </div>
-              <h3>We know tech and business</h3>
+              <h3>How does AI Ready PDX understand my business needs?</h3>
               <p>
-                We understand how companies actually run: how work gets scheduled, how revenue flows, and where things get stuck. We translate AI into process improvements, not buzzwords.
+                We translate AI into practical process improvements, not buzzwords. We understand how companies actually run: scheduling, revenue flow, and operational bottlenecks. Our business-first approach ensures AI solutions address your real challenges.
               </p>
             </div>
             <div className="card why-us-card">
               <div className="icon">
                 <Icons.CheckCircle />
               </div>
-              <h3>We're already doing this</h3>
+              <h3>What AI experience does AI Ready PDX have?</h3>
               <p>
-                We've been working with AI-enabled products and tools for several years and are already helping organizations in the region design and implement AI strategies.
+                We&apos;ve deployed AI solutions for Portland-area organizations for several years. We&apos;re actively helping regional businesses design and implement AI strategies, from small retailers to professional practices and manufacturers.
               </p>
             </div>
             <div className="card why-us-card">
               <div className="icon">
                 <Icons.MessageSquare />
               </div>
-              <h3>People and culture come first</h3>
+              <h3>Will AI replace my employees?</h3>
               <p>
-                We empower your team to do more and create more value with AI, not replace them. Our goal is expanding capabilities while respecting your culture.
+                No - we empower your team to do more with AI, not replace them. Our goal is expanding your team&apos;s capabilities while respecting your workplace culture. AI augments human work, creating more value from your existing staff.
               </p>
             </div>
           </div>
@@ -394,8 +394,9 @@ function App() {
       <section id="services" className="services-table-section">
         <div className="container">
           <div className="section-header">
-            <h2>How We Help Your Industry</h2>
-            <p>AI Ready PDX delivers practical AI solutions tailored to your industry. From marketing to confidential AI deployments, we match the right solutions to your specific needs.</p>
+            <h2>What AI services does AI Ready PDX offer?</h2>
+            <p><strong>TL;DR:</strong> We deliver marketing, operations, management, and confidential AI solutions tailored to your industry - from field services to manufacturing.</p>
+            <p>AI Ready PDX matches the right AI solutions to your specific business needs, whether you need customer outreach automation, scheduling optimization, or air-gapped private AI deployments.</p>
           </div>
           <div className="services-table-wrapper">
             <table className="services-table">
@@ -568,8 +569,9 @@ function App() {
       <section id="pricing" className="pricing">
         <div className="container">
           <div className="section-header">
-            <h2>Pricing</h2>
-            <p>Clear, practical pricing with options for every stage of your AI journey.</p>
+            <h2>How much does AI consulting cost in Portland?</h2>
+            <p><strong>TL;DR:</strong> AI Ready PDX offers packages from $50 (introductory session) to $2,500 (deep dive), plus custom project pricing for implementation work.</p>
+            <p>Clear, transparent pricing with options for every stage of your AI journey - no hidden fees or long-term commitments required.</p>
           </div>
           <div className="pricing-grid">
             <div className="pricing-card">
@@ -628,15 +630,16 @@ function App() {
       <section id="approach" className="approach">
         <div className="container">
           <div className="section-header">
-            <h2>Our Approach</h2>
-            <p>A clear path from assessment to results.</p>
+            <h2>How does AI Ready PDX implement AI solutions?</h2>
+            <p><strong>TL;DR:</strong> We follow a three-phase approach: Assess your readiness, Train your team, and Implement solutions - with clear deliverables at each stage.</p>
+            <p>Our structured process takes you from AI curiosity to practical implementation, with support at every step.</p>
           </div>
           <div className="approach-phases">
             <div className="approach-phase">
               <div className="phase-icon">
                 <Icons.Search />
               </div>
-              <h3>Assess</h3>
+              <h3>Phase 1: How do we assess your AI readiness?</h3>
               <ul>
                 <li>AI Readiness Assessment</li>
                 <li>Website AI Audit (SEO, AEO, GEO)</li>
@@ -649,7 +652,7 @@ function App() {
               <div className="phase-icon">
                 <Icons.Users />
               </div>
-              <h3>Train</h3>
+              <h3>Phase 2: How do we train your team on AI?</h3>
               <ul>
                 <li>Executive AI briefings</li>
                 <li>Team training sessions</li>
@@ -662,7 +665,7 @@ function App() {
               <div className="phase-icon">
                 <Icons.Settings />
               </div>
-              <h3>Implement</h3>
+              <h3>Phase 3: How do we implement AI solutions?</h3>
               <ul>
                 <li>Chatbots & voice agents</li>
                 <li>Content automation tools</li>
@@ -726,8 +729,9 @@ function App() {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-header">
-            <h2>Let&apos;s talk about AI in your business</h2>
-            <p>Whether you&apos;re curious, cautious, or already experimenting, we&apos;d be happy to talk. Tell us a bit about your organization and we&apos;ll follow up with next steps.</p>
+            <h2>How do I get started with AI Ready PDX?</h2>
+            <p><strong>TL;DR:</strong> Contact us for a free initial conversation or book a $50 AI Readiness Session (90% off for first 100 clients).</p>
+            <p>Whether you&apos;re curious, cautious, or already experimenting with AI, we&apos;re here to help. Tell us about your organization and we&apos;ll follow up with personalized next steps.</p>
             <img
               src="/images/sections/ai-strategy-consultation-portland.png"
               alt="AI strategy consultation session with Portland business owner"
