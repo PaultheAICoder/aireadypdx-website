@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import ChatWidget from './components/ChatWidget/ChatWidget'
 import NewsletterPopup from './components/NewsletterPopup'
+import { trackFormSubmission, trackPhoneClick, trackEmailClick } from './utils/analytics'
 
 // Icons as simple SVG components
 const Icons = {
@@ -250,6 +251,8 @@ function App() {
       })
 
       if (response.ok) {
+        // Track form submission for analytics
+        trackFormSubmission('contact_form', formData.freeSession)
         setFormSubmitted(true)
         setFormData({
           name: '',
@@ -812,9 +815,9 @@ function App() {
               <p className="footer-tagline">Powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a></p>
             </div>
             <div className="footer-contact">
-              <p><a href="mailto:hello@aireadypdx.com">hello@aireadypdx.com</a></p>
+              <p><a href="mailto:hello@aireadypdx.com" onClick={() => trackEmailClick('hello@aireadypdx.com')}>hello@aireadypdx.com</a></p>
               <p>3855 SW 153rd Drive, Beaverton, OR</p>
-              <p><a href="tel:+15036190505">(503) 619-0505</a></p>
+              <p><a href="tel:+15036190505" onClick={() => trackPhoneClick('+15036190505')}>(503) 619-0505</a></p>
               <p><a href="#" onClick={openNewsletterPopup} className="footer-newsletter-link">Subscribe to our newsletter</a></p>
             </div>
           </div>
