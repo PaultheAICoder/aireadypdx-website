@@ -78,6 +78,15 @@ select:focus {
   cursor: not-allowed;
 }
 
+/* Form micro-copy */
+.form-microcopy {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 /* Limited Time Offer styling */
 .limited-time-offer {
   font-size: 0.85rem;

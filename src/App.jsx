@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import ChatWidget from './components/ChatWidget/ChatWidget'
 import NewsletterPopup from './components/NewsletterPopup'
@@ -218,6 +218,18 @@ function App() {
   const [formError, setFormError] = useState(null)
   const [formLoading, setFormLoading] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
+  const [showMobileCTA, setShowMobileCTA] = useState(false)
+
+  // Show mobile CTA after scrolling past hero
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+      const heroHeight = document.getElementById('home')?.offsetHeight || 500
+      setShowMobileCTA(scrollY > heroHeight)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -272,13 +284,20 @@ function App() {
             <li><a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a></li>
             <li><a href="#approach" onClick={(e) => scrollToSection(e, 'approach')}>Approach</a></li>
             <li><a href="#about" onClick={(e) => { scrollToSection(e, 'about'); setOpenFaq(0); }}>FAQ</a></li>
-            <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary nav-cta">Book Your $50 Session</a></li>
+            <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary nav-cta">Book a 15-Min Strategy Call</a></li>
           </ul>
           <div className="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <Icons.X /> : <Icons.Menu />}
           </div>
         </div>
       </nav>
+
+      {/* Mobile Sticky CTA */}
+      <div className={`mobile-sticky-cta ${showMobileCTA ? 'visible' : ''}`}>
+        <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary">
+          Book a 15-Min Strategy Call
+        </a>
+      </div>
 
       {/* Hero Section */}
       <section id="home" className="hero">
@@ -571,7 +590,7 @@ function App() {
                 <li>One &ldquo;quick win&rdquo; deliverable per quarter</li>
                 <li>Email support between sessions</li>
               </ul>
-              <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-secondary">Get Started</a>
+              <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-secondary">See How Much Time You Can Save</a>
             </div>
             <div className="pricing-card featured">
               <span className="pricing-badge">Most Popular</span>
@@ -769,8 +788,9 @@ function App() {
                 </div>
               )}
               <button type="submit" className="btn btn-primary form-submit" disabled={formLoading}>
-                {formLoading ? 'Sending...' : 'Send message'}
+                {formLoading ? 'Sending...' : 'Get Your Free AI Audit'}
               </button>
+              <p className="form-microcopy">We'll review your message and respond within 2 business days with personalized recommendations.</p>
             </form>
           )}
         </div>
