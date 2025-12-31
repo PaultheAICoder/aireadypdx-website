@@ -40,7 +40,7 @@ export default [
         { allowConstantExport: true },
       ],
       'no-unused-vars': ['error', { varsIgnorePattern: '^React$' }],
-      'react/no-unescaped-entities': 'off',
+      'react/no-unescaped-entities': ['error', { forbid: ['>', '<', '"', '{', '}'] }],
     },
   },
 ]

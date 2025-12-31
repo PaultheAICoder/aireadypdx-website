@@ -568,7 +568,7 @@ function App() {
               <ul>
                 <li>90 minute training<br />(1 session or 2x 45-min)</li>
                 <li>Website & web presence review</li>
-                <li>One "quick win" deliverable per quarter</li>
+                <li>One &ldquo;quick win&rdquo; deliverable per quarter</li>
                 <li>Email support between sessions</li>
               </ul>
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-secondary">Get Started</a>

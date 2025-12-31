@@ -2,6 +2,7 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { PDFDocument, PDFName, PDFArray, PDFDict, PDFNumber, PDFString } from 'pdf-lib';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -15,6 +16,7 @@ const iconClipboard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 2
 const iconGraduationCap = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>`;
 const iconFactory = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`;
 
+// Use mailto links - we'll try to fix them with pdf-lib post-processing
 const html = `
 <!DOCTYPE html>
 <html>
@@ -65,11 +67,6 @@ const html = `
       text-decoration: none;
       text-align: left;
       display: block;
-    }
-
-    .contact-info a[href^="mailto"] {
-      padding-left: 1px;
-      margin-left: -1px;
     }
 
     .hero {
@@ -290,7 +287,7 @@ const html = `
       <img src="data:image/png;base64,${logoBase64}" alt="AI Ready PDX">
     </div>
     <div class="contact-info">
-      <a href="https://aireadypdx.com/#contact">hello@aireadypdx.com</a>
+      <a href="mailto:hello@aireadypdx.com">hello@aireadypdx.com</a>
       <a href="https://aireadypdx.com">aireadypdx.com</a>
       <span>Portland, OR</span>
     </div>
@@ -409,7 +406,7 @@ const html = `
   <div class="cta-section">
     <h2>AI Readiness Session — <span class="old-price">$500</span> <span class="price">$50</span> (First 100 Clients)</h2>
     <p>60-90 minute consultation. Custom recommendations. AI Opportunities Snapshot document.</p>
-    <a href="https://aireadypdx.com/#contact" class="email">→ hello@aireadypdx.com</a>
+    <a href="mailto:hello@aireadypdx.com" class="email">→ hello@aireadypdx.com</a>
   </div>
 
   <div class="footer">
@@ -420,6 +417,9 @@ const html = `
 `;
 
 async function generatePDF() {
+  const tempPath = path.join(__dirname, 'ai-onepager-table-temp.pdf');
+  const finalPath = path.join(__dirname, 'ai-onepager-table-v1.6.pdf');
+
   console.log('Launching browser...');
   const browser = await puppeteer.launch({
     args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -431,14 +431,87 @@ async function generatePDF() {
 
   console.log('Generating PDF...');
   await page.pdf({
-    path: path.join(__dirname, 'ai-onepager-table-v1.4.pdf'),
+    path: tempPath,
     format: 'Letter',
     printBackground: true,
     margin: { top: '0', right: '0', bottom: '0', left: '0' }
   });
 
   await browser.close();
-  console.log('✓ PDF saved: ai-onepager-table-v1.4.pdf');
+  console.log('Initial PDF generated, attempting to fix mailto links with pdf-lib...');
+
+  // Load the PDF with pdf-lib
+  const pdfBytes = fs.readFileSync(tempPath);
+  const pdfDoc = await PDFDocument.load(pdfBytes);
+
+  // Get the first page
+  const pages = pdfDoc.getPages();
+  const firstPage = pages[0];
+  const { width, height } = firstPage.getSize();
+
+  console.log(`Page size: ${width} x ${height}`);
+
+  // Get existing annotations to find and fix mailto links
+  const annots = firstPage.node.get(PDFName.of('Annots'));
+
+  if (annots) {
+    const annotsArray = pdfDoc.context.lookup(annots);
+    if (annotsArray instanceof PDFArray) {
+      console.log(`Found ${annotsArray.size()} annotations`);
+
+      for (let i = 0; i < annotsArray.size(); i++) {
+        const annotRef = annotsArray.get(i);
+        const annot = pdfDoc.context.lookup(annotRef);
+
+        if (annot instanceof PDFDict) {
+          const subtype = annot.get(PDFName.of('Subtype'));
+          const a = annot.get(PDFName.of('A'));
+
+          if (subtype && subtype.toString() === '/Link' && a) {
+            const action = pdfDoc.context.lookup(a);
+            if (action instanceof PDFDict) {
+              const uri = action.get(PDFName.of('URI'));
+              if (uri && uri.toString().includes('mailto:')) {
+                console.log(`Found mailto link: ${uri.toString()}`);
+
+                // Get current rect
+                const rect = annot.get(PDFName.of('Rect'));
+                if (rect) {
+                  const rectArray = pdfDoc.context.lookup(rect);
+                  if (rectArray instanceof PDFArray) {
+                    const x1 = rectArray.get(0);
+                    const y1 = rectArray.get(1);
+                    const x2 = rectArray.get(2);
+                    const y2 = rectArray.get(3);
+                    console.log(`  Current rect: [${x1}, ${y1}, ${x2}, ${y2}]`);
+
+                    // Expand the rect significantly - 100 points left, 20 points in other directions
+                    if (x1 instanceof PDFNumber && x2 instanceof PDFNumber && y1 instanceof PDFNumber && y2 instanceof PDFNumber) {
+                      const newX1 = x1.asNumber() - 100;  // Much bigger expansion left
+                      const newY1 = y1.asNumber() - 10;   // Expand down
+                      const newX2 = x2.asNumber() + 20;   // Expand right
+                      const newY2 = y2.asNumber() + 10;   // Expand up
+                      const newRect = pdfDoc.context.obj([newX1, newY1, newX2, newY2]);
+                      annot.set(PDFName.of('Rect'), newRect);
+                      console.log(`  New rect: [${newX1}, ${newY1}, ${newX2}, ${newY2}]`);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  const modifiedPdfBytes = await pdfDoc.save();
+  fs.writeFileSync(finalPath, modifiedPdfBytes);
+
+  // Clean up temp file
+  fs.unlinkSync(tempPath);
+
+  console.log('✓ PDF saved: ai-onepager-table-v1.6.pdf');
 }
 
 generatePDF().catch(console.error);
