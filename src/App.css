@@ -120,6 +120,31 @@ select:focus {
   font-size: 0.9rem;
 }
 
+/* Section Images */
+.section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.about-image {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.confidential-ai-img {
+  max-width: 200px;
+  height: auto;
+}
+
+.contact-image {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
 /* Print styles */
 @media print {
   .navbar,

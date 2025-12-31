@@ -532,7 +532,11 @@ function App() {
               </a>
             </div>
             <div className="confidential-ai-icon">
-              <Icons.Shield />
+              <img
+                src="/images/sections/secure-on-premise-ai-server.png"
+                alt="Secure on-premise AI server for confidential business data"
+                className="confidential-ai-img"
+              />
             </div>
           </div>
         </div>
@@ -654,6 +658,11 @@ function App() {
         <div className="container">
           <div className="section-header">
             <h2>Frequently Asked Questions</h2>
+            <img
+              src="/images/sections/ai-ready-pdx-team-portland.jpg"
+              alt="AI Ready PDX consulting team helping Portland businesses with AI adoption"
+              className="section-image about-image"
+            />
           </div>
           <div className="faq-list">
             <div className={`faq-item ${openFaq === 0 ? 'open' : ''}`} onClick={() => toggleFaq(0)}>
@@ -697,6 +706,11 @@ function App() {
           <div className="section-header">
             <h2>Let's talk about AI in your business</h2>
             <p>Whether you're curious, cautious, or already experimenting, we'd be happy to talk. Tell us a bit about your organization and we'll follow up with next steps.</p>
+            <img
+              src="/images/sections/ai-strategy-consultation-portland.png"
+              alt="AI strategy consultation session with Portland business owner"
+              className="section-image contact-image"
+            />
           </div>
           {formSubmitted ? (
             <div className="contact-form" style={{textAlign: 'center'}}>
