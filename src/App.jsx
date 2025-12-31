@@ -308,7 +308,7 @@ function App() {
           <div className="hero-content">
             <h1>Portland&apos;s AI Consulting Partner for Small Business</h1>
             <p className="hero-subheading">
-              AI has moved from bleeding edge to business essential. AI Ready PDX, powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
+              AI has moved from bleeding edge to business essential. AI Ready PDX, powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>' 30+ years of technology leadership, helps businesses across the Portland metro area adopt AI confidently, practically, and securely.
             </p>
             <div className="hero-buttons">
               <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="btn btn-primary btn-large">
@@ -696,7 +696,7 @@ function App() {
             <div className={`faq-item ${openFaq === 1 ? 'open' : ''}`} onClick={() => toggleFaq(1)}>
               <h3>What kinds of businesses do you work with?</h3>
               <div className="faq-answer">
-                <p>We work primarily with small to mid-sized businesses and nonprofits in the Portland metro and Pacific Northwest. Our clients include home service companies, coffee roasters, professional practices like dental and legal offices, small manufacturers, and community organizations.</p>
+                <p>We work primarily with small to mid-sized businesses and nonprofits across the Portland metro area, including Beaverton, Lake Oswego, Tigard, Hillsboro, and surrounding communities. Our clients include home service companies, coffee roasters in the Pearl District, professional practices like dental and legal offices in Downtown Portland, and small manufacturers throughout the region.</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 2 ? 'open' : ''}`} onClick={() => toggleFaq(2)}>
