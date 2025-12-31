@@ -289,6 +289,27 @@ npm run build
 | Validation | [X]m |
 | Planning | [X]m |
 | **Total** | **[X]m** |
+
+## Insights & Process Improvements (REQUIRED)
+
+### Issues Encountered During Investigation
+[Document any difficulties, ambiguities, or obstacles encountered]
+1. [Issue] - [How it was resolved or worked around]
+
+### Input Quality Assessment
+**Clarity of Original Request**: [1-5 scale]
+**Missing Information**: [What would have helped]
+**Suggested Input Improvements**: [How future requests could be better structured]
+
+### Process Improvement Suggestions
+**For Future Scout-and-Plan Runs**:
+1. [Specific suggestion for improving this agent's effectiveness]
+
+**For Build Agent**:
+1. [Information or context that would help Build agent succeed]
+
+**For Overall Workflow**:
+1. [Suggestions for improving the orchestration or handoffs]
 ```
 
 ---

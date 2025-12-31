@@ -152,6 +152,20 @@ Read all agent outputs and synthesize:
 - Partially complete / incomplete items (with WHY)
 - Future work needed
 
+## C1.5. Collect Agent Insights (REQUIRED)
+
+**Read the "Insights & Process Improvements" sections from:**
+1. Scout-and-Plan output (`plan-[ISSUE]-[MMDDYY].md`)
+2. Build output (`build-[ISSUE]-[MMDDYY].md`)
+
+**Extract and aggregate:**
+- Issues encountered by each agent
+- Input/plan quality assessments
+- Process improvement suggestions
+- Code/architecture observations
+
+**These insights MUST be included in the completion report (C5).**
+
 ## C2. Verify Deferred Work Tracking
 
 Check original issue/spec for deferred items ("Phase 2", "Optional", "Future", "TODO").
@@ -227,13 +241,35 @@ Write to `/home/pbrown/aireadypdx/completion-docs/YYYY-MM-DD-issue-XXX-descripti
 | Cleanup | [X]m | <10m |
 | **Total** | **[X]m** | **<30m** |
 
-## Lessons Learned (REQUIRED)
+## Lessons Learned & Workflow Insights (REQUIRED)
 
 ### What Went Well
 1. [Specific thing that worked - be concrete]
 
 ### What Could Be Improved
 1. [Specific issue] - [Suggested fix for future]
+
+### Aggregated Agent Insights
+
+#### From Scout-and-Plan Agent
+**Issues Encountered**: [summarize from plan output]
+**Input Quality Assessment**: [summarize ratings and feedback]
+**Suggestions for Future**: [list key suggestions]
+
+#### From Build Agent
+**Issues Encountered**: [summarize from build output]
+**Plan Quality Assessment**: [summarize ratings and feedback]
+**Code/Architecture Observations**: [notable findings]
+**Suggestions for Future**: [list key suggestions]
+
+#### From Test-and-Cleanup Agent (this run)
+**Validation Issues Found**: [what needed fixing]
+**Process Observations**: [what worked/didn't work]
+
+### Recommended Process Changes
+[Synthesize the most important suggestions from all agents into actionable improvements]
+1. [High-priority improvement] - [Which agent(s) suggested it]
+2. [Medium-priority improvement] - [Which agent(s) suggested it]
 
 ## Git Information
 **Commit**: [message]
@@ -318,6 +354,29 @@ $ npm run lint → ✅
 **Message**: [first line]
 **Files Changed**: [count]
 **Push Status**: ✅
+
+## Insights & Process Improvements (REQUIRED)
+
+### Issues Encountered During Validation
+1. [Issue] - [How resolved] - [Time spent]
+
+### Build Output Quality Assessment
+**Completeness of Implementation**: [1-5 scale]
+**Code Quality**: [1-5 scale]
+**Documentation Quality**: [1-5 scale]
+
+### Process Improvement Suggestions
+**For Future Scout-and-Plan Runs**:
+1. [Suggestion based on what would have helped validation]
+
+**For Future Build Runs**:
+1. [Suggestion based on issues found during validation]
+
+**For Future Test-and-Cleanup Runs**:
+1. [Self-improvement suggestion]
+
+**For Overall Workflow**:
+1. [Cross-cutting improvement suggestions]
 
 ## Next Steps
 1. Review completion report at completion-docs/[filename]

@@ -151,6 +151,36 @@ Write to `/home/pbrown/aireadypdx/.agents/outputs/build-[ISSUE]-[MMDDYY].md`:
 | Phase 1 | [X]m |
 | Validation | [X]m |
 | **Total** | **[X]m** |
+
+## Insights & Process Improvements (REQUIRED)
+
+### Issues Encountered During Build
+[Document any difficulties, blockers, or unexpected problems]
+1. [Issue] - [How it was resolved] - [Time spent]
+
+### Plan Quality Assessment
+**Clarity of Instructions**: [1-5 scale]
+**Completeness of Subtasks**: [1-5 scale]
+**Accuracy of Patterns/References**: [1-5 scale]
+**Missing Information in Plan**: [What would have helped]
+
+### Code & Architecture Observations
+[Note any code patterns, technical debt, or structural issues discovered]
+1. [Observation] - [Potential improvement]
+
+### Process Improvement Suggestions
+**For Future Scout-and-Plan Runs**:
+1. [What the planning agent could do better to help Build succeed]
+
+**For Future Build Runs**:
+1. [Specific suggestion for improving build agent effectiveness]
+
+**For Test-and-Cleanup Agent**:
+1. [Areas that need extra validation attention]
+2. [Known edge cases or potential issues to check]
+
+**For Overall Workflow**:
+1. [Suggestions for improving the orchestration or handoffs]
 ```
 
 ## Rules
