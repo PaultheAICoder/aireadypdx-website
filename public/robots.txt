@@ -22,3 +22,6 @@ Disallow: /novus-migration-status
 
 User-agent: Claude-Web
 Disallow: /novus-migration-status
+
+# Sitemap location
+Sitemap: https://aireadypdx.com/sitemap.xml
