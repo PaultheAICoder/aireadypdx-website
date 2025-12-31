@@ -1,0 +1,39 @@
+# AI Ready PDX
+
+> AI Ready PDX is a Portland-based AI consulting firm helping small to mid-sized businesses and nonprofits adopt AI safely and practically. Part of the Vital Enterprises family with 30+ years of technology leadership.
+
+AI Ready PDX serves the Portland metro and Pacific Northwest region, offering practical AI solutions for organizations that want to use AI but don't need to become technology companies.
+
+## Services
+
+- [Strategy & Roadmaps](https://aireadypdx.com/#services): AI opportunity identification, 6-12 month roadmaps, ongoing strategy support
+- [Automation & Agents](https://aireadypdx.com/#services): Internal tools, scheduling, intake forms, AI-assisted reporting
+- [Marketing & Outreach](https://aireadypdx.com/#services): Website optimization, SEO/AEO/GEO, content calendars, ethical outreach
+- [Training & Enablement](https://aireadypdx.com/#services): Executive briefings, staff AI 101, developer bootcamps
+- [Confidential AI](https://aireadypdx.com/#confidential-ai): On-premise deployment, private cloud inference, air-gapped solutions
+
+## Pricing
+
+- [AI Readiness Session](https://aireadypdx.com/#pricing): $50 (90% off, limited time) - 60-90 minute consultation with AI Opportunities Snapshot
+- [AI Training & Quick Wins](https://aireadypdx.com/#pricing): $1,500/quarter - Training, web presence review, one deliverable per quarter
+- [AI Deep Dive](https://aireadypdx.com/#pricing): $2,500 one-time - 4 hours consultation, written roadmap, training session included
+- [Execution & Projects](https://aireadypdx.com/#pricing): Custom pricing - Marketing services, custom AI solutions, on-premise deployment
+
+## Industries Served
+
+- Field Services (HVAC, Plumbing, Landscaping)
+- Retail & Hospitality (Coffee, Restaurants, Shops)
+- Professional (Dental, Legal, Accounting)
+- Civic & Education (Schools, Churches, Public Safety)
+- Manufacturing (Machinery, Fabrication, Assembly)
+
+## Contact
+
+- Email: hello@aireadypdx.com
+- Phone: (503) 619-0505
+- Address: 3855 SW 153rd Drive, Beaverton, OR
+- Website: https://aireadypdx.com
+
+## Optional
+
+- [Full Content](https://aireadypdx.com/llms-full.txt): Complete site content with detailed descriptions

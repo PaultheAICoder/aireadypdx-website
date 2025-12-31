@@ -25,3 +25,6 @@ Disallow: /novus-migration-status
 
 # Sitemap location
 Sitemap: https://aireadypdx.com/sitemap.xml
+
+# LLMs.txt for AI crawlers
+LLMs-txt: https://aireadypdx.com/llms.txt

@@ -1,0 +1,157 @@
+# AI Ready PDX - Complete Site Content
+
+> AI Ready PDX is Portland's AI consulting partner for small business. Powered by Vital Enterprises' 30+ years of technology leadership, we help Portland-area businesses adopt AI confidently, practically, and securely.
+
+## Company Overview
+
+AI Ready PDX is part of the Vital Enterprises family in the Pacific Northwest. Our companies include VTM, which has led global technology consortiums for over 30 years, and Novus Labs, which has spent 17 years working on complex consumer electronics products for leading brands like Amazon, Google, Microsoft, and Oculus.
+
+We help mostly non-technical small and mid-sized organizations in the Portland metro and Pacific Northwest adopt AI safely and practically. AI has moved from bleeding edge to business essential, and we help local organizations get ready.
+
+### Core Values
+- Calm, competent, grounded - not hype-driven
+- Plain language, practical outcomes
+- People and culture come first - we empower your team, not replace them
+- Privacy-first options available
+
+## Why Work With AI Ready PDX
+
+### Decades of Tech Leadership
+AI Ready PDX is part of the Vital Enterprises family. Our companies include VTM, which has led global technology consortiums for over 30 years, and Novus Labs, which has spent 17 years working on complex consumer electronics products.
+
+### We Know Tech and Business
+We understand how companies actually run: how work gets scheduled, how revenue flows, and where things get stuck. We translate AI into process improvements, not buzzwords.
+
+### We're Already Doing This
+We've been working with AI-enabled products and tools for several years and are already helping organizations in the region design and implement AI strategies.
+
+### People and Culture Come First
+We empower your team to do more and create more value with AI, not replace them. Our goal is expanding capabilities while respecting your culture.
+
+## Services
+
+### Marketing & Sales
+- **Web presence (SEO, AEO, GEO)**: AI-assisted website optimization for search engines and AI answer engines
+- **Content & collateral**: AI-powered content creation and marketing materials
+- **Outreach (email, voice, social)**: Ethical cold outreach and communication systems
+
+### Operations
+- **Scheduling & intake**: Smarter lead intake and follow-up workflows
+- **Inventory & supply chain**: AI-powered visibility into orders and inventory
+- **Process automation**: Internal tools and workflow automation using agentic coding
+
+### Management
+- **Dashboards & analytics**: AI-powered business intelligence
+- **Reporting & insights**: Automated reporting and trend analysis
+
+### Confidential AI
+- **On-premise deployment**: Local AI inference boxes installed on your network
+- **Private cloud inference**: Locked-down Azure and AWS environments with private networking
+
+## Industries We Serve
+
+### Field Services
+HVAC, Plumbing, Landscaping, Tree Services - Improve scheduling, quoting, and follow-up
+
+### Retail & Hospitality
+Coffee, Restaurants, Shops - Better customer communication and web presence
+
+### Professional
+Dental, Legal, Accounting - Streamline intake, reminders, and client communication with privacy-first options
+
+### Civic & Education
+Schools, Churches, Public Safety - Do more with limited staff while protecting sensitive data
+
+### Manufacturing
+Machinery, Fabrication, Assembly - Better visibility into orders, inventory, and customer needs
+
+## Pricing
+
+### AI Readiness Session - $50 (90% off for first 100 clients)
+- 60-90 minute consultation
+- Custom recommendations based on your business
+- AI Opportunities Snapshot document with 3-5 specific ideas and rough ROI
+- Recommendation on whether on-prem, cloud, or simple SaaS tools make sense
+
+### AI Training & Quick Wins - $1,500/quarter
+- 90 minute training (1 session or 2x 45-min)
+- Website & web presence review
+- One "quick win" deliverable per quarter
+- Email support between sessions
+
+### AI Deep Dive - $2,500 one-time (Most Popular)
+- 2 hours: Deep dive into your business
+- 2 hours: Recommendations presentation
+- Written roadmap/deliverable
+- Includes 90-minute training session
+- Execute yourself or engage us for projects
+
+### Execution & Projects - Custom Pricing
+- **Marketing Services**: Content, posting, analytics, and branding
+- **Custom Solutions**: AI applications and integrations
+- **AI Kickstart Sprint**: Roadmap + first pilot
+- **On-Premise AI**: Air-gapped deployment for sensitive data
+
+## Our Approach
+
+### Phase 1: Assess
+- AI Readiness Assessment
+- Website AI Audit (SEO, AEO, GEO)
+- Opportunity identification
+- Technology stack review
+- Privacy & security evaluation
+
+### Phase 2: Train
+- Executive AI briefings
+- Team training sessions
+- Agentic coding tools
+- Ongoing strategy support
+- Quarterly State of AI updates
+
+### Phase 3: Implement
+- Chatbots & voice agents
+- Content automation tools
+- Cold outreach systems
+- Custom AI applications
+- Secure on-premise AI
+
+## Confidential AI Solutions
+
+For organizations with sensitive data (legal, medical, financial, or proprietary), we offer on-premise and air-gapped solutions where your data never leaves your building.
+
+### Benefits
+- Your data never leaves your machine
+- Owning vs renting intelligence
+- Predictable costs (CapEx vs unpredictable token bills)
+- Regulatory and compliance benefits for law, medical, and finance clients
+
+## Frequently Asked Questions
+
+### Who is AI Ready PDX?
+AI Ready PDX is part of Vital Enterprises, with 30+ years leading global technology consortiums and 17 years building complex products for leading brands. We help Portland-area businesses and nonprofits adopt AI practically - projects that ship in weeks, clear explanations of what AI can do, and a pace that respects your culture.
+
+### What kinds of businesses do you work with?
+We work primarily with small to mid-sized businesses and nonprofits in the Portland metro and Pacific Northwest. Our clients include home service companies, coffee roasters, professional practices like dental and legal offices, small manufacturers, and community organizations.
+
+### Do you offer on-premise AI solutions?
+Yes. For organizations with strict data privacy or compliance requirements, we can deploy local AI appliances on your network. Your data never leaves your building, and you get the same capabilities as cloud AI without the privacy concerns.
+
+### What does an AI Readiness Session cover?
+In our 60-90 minute session (just $50 for the first 100 clients), we review how your organization runs today, identify 3-5 specific AI opportunities with rough ROI estimates, recommend whether on-premise, cloud, or simple SaaS tools make sense for you, and provide a written AI Opportunities Snapshot you can share with your team.
+
+### Is AI safe for sensitive data like legal or medical records?
+It can be, with the right setup. We offer both on-premise solutions where data never leaves your network, and locked-down cloud environments with private networking. We also train your team on what's safe to use AI for and what should stay in your core systems.
+
+## Contact Information
+
+- **Email**: hello@aireadypdx.com
+- **Phone**: (503) 619-0505
+- **Address**: 3855 SW 153rd Drive, Beaverton, OR
+- **Website**: https://aireadypdx.com
+
+### Parent Company
+Powered by Vital Enterprises - https://vital-enterprises.com
+
+### Related Companies
+- VTM Group: https://vtmgroup.com - 30+ years leading global technology consortiums
+- Novus Labs: https://novuslabs.com - 17 years engineering services for top-tier brands
