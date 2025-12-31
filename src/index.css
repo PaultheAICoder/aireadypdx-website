@@ -1165,6 +1165,56 @@ section {
   font-size: 0.9rem;
 }
 
+.form-microcopy {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Contact Section Two-Column Layout */
+.contact-content {
+  display: flex;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 0 0 400px;
+}
+
+.contact-map {
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-map iframe {
+  display: block;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+}
+
+.contact-action-btn svg {
+  flex-shrink: 0;
+}
+
 /* Footer */
 .footer {
   background: var(--color-primary);
@@ -1260,6 +1310,17 @@ section {
   .confidential-ai-icon svg {
     width: 80px;
     height: 80px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 

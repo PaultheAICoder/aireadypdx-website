@@ -726,76 +726,107 @@ function App() {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-header">
-            <h2>Let's talk about AI in your business</h2>
-            <p>Whether you're curious, cautious, or already experimenting, we'd be happy to talk. Tell us a bit about your organization and we'll follow up with next steps.</p>
+            <h2>Let&apos;s talk about AI in your business</h2>
+            <p>Whether you&apos;re curious, cautious, or already experimenting, we&apos;d be happy to talk. Tell us a bit about your organization and we&apos;ll follow up with next steps.</p>
             <img
               src="/images/sections/ai-strategy-consultation-portland.png"
               alt="AI strategy consultation session with Portland business owner"
               className="section-image contact-image"
             />
           </div>
-          {formSubmitted ? (
-            <div className="contact-form" style={{textAlign: 'center'}}>
-              <h3 style={{color: 'var(--color-accent)', marginBottom: '1rem'}}>Thank you!</h3>
-              <p>Thanks for reaching out. We'll review your message and get back to you within two business days.</p>
+          <div className="contact-content">
+            <div className="contact-info">
+              <div className="contact-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.8!2d-122.8258!3d45.4589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950c8b0b0b0b0b%3A0x0!2s3855+SW+153rd+Dr%2C+Beaverton%2C+OR+97006!5e0!3m2!1sen!2sus!4v1704000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style={{border: 0, borderRadius: '12px'}}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="AI Ready PDX Office Location in Beaverton, Oregon"
+                ></iframe>
+              </div>
+              <div className="contact-actions">
+                <a href="tel:+15036190505" className="btn btn-secondary contact-action-btn" onClick={() => trackPhoneClick('+15036190505')}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  Call (503) 619-0505
+                </a>
+                <a href="https://www.google.com/maps/dir//3855+SW+153rd+Dr,+Beaverton,+OR+97006" target="_blank" rel="noopener noreferrer" className="btn btn-secondary contact-action-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  Get Directions
+                </a>
+              </div>
             </div>
-          ) : (
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Name *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                />
+            {formSubmitted ? (
+              <div className="contact-form" style={{textAlign: 'center'}}>
+                <h3 style={{color: 'var(--color-accent)', marginBottom: '1rem'}}>Thank you!</h3>
+                <p>Thanks for reaching out. We&apos;ll review your message and get back to you within two business days.</p>
               </div>
-              <div className="form-group">
-                <label htmlFor="email">Email *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">What would you like AI to help with? *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Tell us about your business and what you're hoping AI can help with..."
-                ></textarea>
-              </div>
-              <div className="form-group checkbox-group">
-                <input
-                  type="checkbox"
-                  id="freeSession"
-                  name="freeSession"
-                  checked={formData.freeSession}
-                  onChange={handleInputChange}
-                />
-                <label htmlFor="freeSession">I'm interested in a $50 AI Readiness Session (90% off for first 100 clients)*</label>
-              </div>
-              <p className="limited-time-offer">* Limited Time Offer</p>
-              {formError && (
-                <div className="form-error">
-                  {formError}
+            ) : (
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label htmlFor="name">Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
-              )}
-              <button type="submit" className="btn btn-primary form-submit" disabled={formLoading}>
-                {formLoading ? 'Sending...' : 'Get Your Free AI Audit'}
-              </button>
-              <p className="form-microcopy">We'll review your message and respond within 2 business days with personalized recommendations.</p>
-            </form>
-          )}
+                <div className="form-group">
+                  <label htmlFor="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">What would you like AI to help with? *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="Tell us about your business and what you're hoping AI can help with..."
+                  ></textarea>
+                </div>
+                <div className="form-group checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="freeSession"
+                    name="freeSession"
+                    checked={formData.freeSession}
+                    onChange={handleInputChange}
+                  />
+                  <label htmlFor="freeSession">I&apos;m interested in a $50 AI Readiness Session (90% off for first 100 clients)*</label>
+                </div>
+                <p className="limited-time-offer">* Limited Time Offer</p>
+                {formError && (
+                  <div className="form-error">
+                    {formError}
+                  </div>
+                )}
+                <button type="submit" className="btn btn-primary form-submit" disabled={formLoading}>
+                  {formLoading ? 'Sending...' : 'Get Your Free AI Audit'}
+                </button>
+                <p className="form-microcopy">We&apos;ll review your message and respond within 2 business days with personalized recommendations.</p>
+              </form>
+            )}
+          </div>
         </div>
       </section>
 
