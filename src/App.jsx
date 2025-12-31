@@ -284,7 +284,7 @@ function App() {
       <section id="home" className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1>2026 is the Year of AI.<br />Let's get you ready.</h1>
+            <h1>Portland&apos;s AI Consulting Partner for Small Business</h1>
             <p className="hero-subheading">
               AI has moved from bleeding edge to business essential. AI Ready PDX, powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a>' 30+ years of technology leadership, helps Portland-area businesses adopt AI confidently, practically, and securely.
             </p>
