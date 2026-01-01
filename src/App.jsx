@@ -352,6 +352,20 @@ function App() {
         </div>
       </section>
 
+      {/* Trust Signals Section */}
+      <section className="trust-signals">
+        <div className="container">
+          <p className="trust-signals-heading">AI Platforms We Work With</p>
+          <div className="trust-signals-logos">
+            <span className="partner-name">OpenAI</span>
+            <span className="partner-name">Anthropic Claude</span>
+            <span className="partner-name">Google Gemini</span>
+            <span className="partner-name">Microsoft Copilot</span>
+            <span className="partner-name">Zapier</span>
+          </div>
+        </div>
+      </section>
+
       {/* Why Us Section */}
       <section id="why-us" className="why-us">
         <div className="container">
