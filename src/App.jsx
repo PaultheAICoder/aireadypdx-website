@@ -278,7 +278,16 @@ function App() {
       <nav className="navbar">
         <div className="container">
           <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="nav-logo">
-            <img src="/images/logos/logo-nav.png" alt="AI Ready PDX" className="nav-logo-img" />
+            <picture>
+              <source srcSet="/images/logos/logo-nav.webp" type="image/webp" />
+              <img
+                src="/images/logos/logo-nav.png"
+                alt="AI Ready PDX"
+                className="nav-logo-img"
+                width="200"
+                height="109"
+              />
+            </picture>
           </a>
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li><a href="#why-us" onClick={(e) => scrollToSection(e, 'why-us')}>Why Us</a></li>
@@ -555,11 +564,17 @@ function App() {
               </a>
             </div>
             <div className="confidential-ai-icon">
-              <img
-                src="/images/sections/secure-on-premise-ai-server.png"
-                alt="Secure on-premise AI server for confidential business data"
-                className="confidential-ai-img"
-              />
+              <picture>
+                <source srcSet="/images/sections/secure-on-premise-ai-server.webp" type="image/webp" />
+                <img
+                  src="/images/sections/secure-on-premise-ai-server.png"
+                  alt="Secure on-premise AI server for confidential business data"
+                  className="confidential-ai-img"
+                  loading="lazy"
+                  width="1408"
+                  height="768"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -683,11 +698,17 @@ function App() {
         <div className="container">
           <div className="section-header">
             <h2>Frequently Asked Questions</h2>
-            <img
-              src="/images/sections/ai-ready-pdx-team-portland.jpg"
-              alt="AI Ready PDX consulting team helping Portland businesses with AI adoption"
-              className="section-image about-image"
-            />
+            <picture>
+              <source srcSet="/images/sections/ai-ready-pdx-team-portland.webp" type="image/webp" />
+              <img
+                src="/images/sections/ai-ready-pdx-team-portland.jpg"
+                alt="AI Ready PDX consulting team helping Portland businesses with AI adoption"
+                className="section-image about-image"
+                loading="lazy"
+                width="1408"
+                height="768"
+              />
+            </picture>
           </div>
           <div className="faq-list">
             <div className={`faq-item ${openFaq === 0 ? 'open' : ''}`} onClick={() => toggleFaq(0)}>
@@ -732,11 +753,17 @@ function App() {
             <h2>How do I get started with AI Ready PDX?</h2>
             <p><strong>TL;DR:</strong> Contact us for a free initial conversation or book a $50 AI Readiness Session (90% off for first 100 clients).</p>
             <p>Whether you&apos;re curious, cautious, or already experimenting with AI, we&apos;re here to help. <strong>We respond within 2 business days</strong> with personalized recommendations. Tell us about your organization and we&apos;ll follow up with next steps tailored to your specific situation.</p>
-            <img
-              src="/images/sections/ai-strategy-consultation-portland.png"
-              alt="AI strategy consultation session with Portland business owner"
-              className="section-image contact-image"
-            />
+            <picture>
+              <source srcSet="/images/sections/ai-strategy-consultation-portland.webp" type="image/webp" />
+              <img
+                src="/images/sections/ai-strategy-consultation-portland.png"
+                alt="AI strategy consultation session with Portland business owner"
+                className="section-image contact-image"
+                loading="lazy"
+                width="1408"
+                height="768"
+              />
+            </picture>
           </div>
           <div className="contact-content">
             <div className="contact-info">
@@ -846,7 +873,17 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <img src="/images/logos/logo-full.png" alt="AI Ready PDX" className="footer-logo-img" />
+              <picture>
+                <source srcSet="/images/logos/logo-full.webp" type="image/webp" />
+                <img
+                  src="/images/logos/logo-full.png"
+                  alt="AI Ready PDX"
+                  className="footer-logo-img"
+                  loading="lazy"
+                  width="300"
+                  height="163"
+                />
+              </picture>
               <p className="footer-tagline">Powered by <a href="https://vital-enterprises.com" target="_blank" rel="noopener noreferrer">Vital Enterprises</a></p>
             </div>
             <div className="footer-contact">
