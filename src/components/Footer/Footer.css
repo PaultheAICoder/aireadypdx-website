@@ -1,0 +1,92 @@
+/* Footer Component Styles */
+/* Note: Base styles are also in index.css - this file is for component isolation */
+
+.footer {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo-img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 0.5rem;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact a {
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.footer-contact a:hover {
+  opacity: 1;
+  color: var(--color-accent);
+}
+
+.footer-contact p {
+  color: var(--color-white);
+  margin-bottom: 0.25rem;
+}
+
+.footer-newsletter-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-white);
+}
+
+.footer-bottom p {
+  color: var(--color-white);
+}
+
+.footer-bottom .build-info {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  /* Add padding to footer to prevent mobile CTA overlap */
+  .footer {
+    padding-bottom: 5rem;
+  }
+}

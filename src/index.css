@@ -1489,3 +1489,24 @@ section {
     padding: 1.5rem;
   }
 }
+
+/* Placeholder Pages (Coming Soon) */
+.placeholder-page {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.placeholder-page h1 {
+  margin-bottom: 1rem;
+}
+
+.placeholder-page p {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
