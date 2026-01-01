@@ -4,23 +4,31 @@ User-agent: *
 Allow: /
 Disallow: /novus-migration-status
 
-# Block all AI/LLM crawlers from Novus page
+# AI/LLM crawlers - block Novus page only, allow main content
+# OpenAI
 User-agent: GPTBot
 Disallow: /novus-migration-status
 
 User-agent: ChatGPT-User
 Disallow: /novus-migration-status
 
+User-agent: OAI-SearchBot
+Disallow: /novus-migration-status
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /novus-migration-status
+
+# Google AI
 User-agent: Google-Extended
 Disallow: /novus-migration-status
 
+# Common Crawl
 User-agent: CCBot
 Disallow: /novus-migration-status
 
-User-agent: anthropic-ai
-Disallow: /novus-migration-status
-
-User-agent: Claude-Web
+# Perplexity
+User-agent: PerplexityBot
 Disallow: /novus-migration-status
 
 # Sitemap location
