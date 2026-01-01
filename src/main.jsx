@@ -10,6 +10,7 @@ import NovusMigrationStatus from './pages/NovusMigrationStatus.jsx'
 import AIConsulting from './pages/services/AIConsulting.jsx'
 import WorkflowAutomation from './pages/services/WorkflowAutomation.jsx'
 import EmployeeTraining from './pages/services/EmployeeTraining.jsx'
+import ConfidentialAI from './pages/services/ConfidentialAI.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,7 +22,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/services/ai-consulting" element={<AIConsulting />} />
           <Route path="/services/workflow-automation" element={<WorkflowAutomation />} />
           <Route path="/services/employee-training" element={<EmployeeTraining />} />
-          <Route path="/services/confidential-ai" element={<div className="placeholder-page"><h1>Confidential AI</h1><p>Coming Soon</p></div>} />
+          <Route path="/services/confidential-ai" element={<ConfidentialAI />} />
           <Route path="/about" element={<div className="placeholder-page"><h1>About</h1><p>Coming Soon</p></div>} />
         </Route>
         {/* Standalone pages without Layout */}
