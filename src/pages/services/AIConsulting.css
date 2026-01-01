@@ -1,0 +1,418 @@
+/* AI Consulting Service Page Styles */
+
+/* Service Hero */
+.service-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 4rem;
+  background: linear-gradient(135deg, rgba(11, 61, 46, 0.9) 0%, rgba(31, 58, 95, 0.85) 100%);
+  color: var(--color-white);
+}
+
+.service-hero-content {
+  max-width: 800px;
+}
+
+.service-hero h1 {
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.service-hero-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.service-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.service-hero .btn-secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.service-hero .btn-secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Service Details Section */
+.service-details {
+  background: var(--color-white);
+  padding: var(--section-padding);
+}
+
+.service-cards {
+  margin-top: 2rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--color-sage);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.service-icon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--color-primary);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.service-card p {
+  margin-bottom: 1.5rem;
+}
+
+.service-features {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-background);
+  font-size: 0.9rem;
+}
+
+.service-features li:last-child {
+  border-bottom: none;
+}
+
+.service-features li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* Benefits Section */
+.service-benefits {
+  background: var(--color-background);
+  padding: var(--section-padding);
+}
+
+.benefits-grid {
+  margin-top: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--color-sage);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-icon svg {
+  width: 30px;
+  height: 30px;
+  color: var(--color-primary);
+}
+
+.benefit-content h3 {
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+}
+
+.benefit-content p {
+  margin-bottom: 0;
+}
+
+/* Process Section */
+.service-process {
+  background: var(--color-white);
+  padding: var(--section-padding);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.process-step {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.process-step h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.service-cta {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: var(--section-padding);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-cta h2 {
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.service-cta > .container > .cta-content > p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-pricing {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cta-price-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  max-width: 350px;
+  position: relative;
+}
+
+.cta-price-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.cta-price-card .price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.cta-price-card .price s {
+  color: var(--color-text-light);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.cta-price-card .price-note {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.cta-price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.cta-price-card li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-background);
+  color: var(--color-text-light);
+}
+
+.cta-price-card li:last-child {
+  border-bottom: none;
+}
+
+.cta-price-card li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.cta-price-card.featured {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.cta-price-card.featured h3,
+.cta-price-card.featured .price {
+  color: var(--color-white);
+}
+
+.cta-price-card.featured .price-note {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-price-card.featured li {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.cta-price-card.featured li::before {
+  color: var(--color-white);
+}
+
+.cta-subtext {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-subtext a {
+  color: var(--color-accent);
+}
+
+/* Related Services Section */
+.related-services {
+  background: var(--color-background);
+  padding: var(--section-padding);
+}
+
+.related-cards {
+  margin-top: 2rem;
+}
+
+.related-card {
+  display: block;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.related-card svg {
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.related-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-card p {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cta-pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-price-card {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .cta-price-card.featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: auto;
+    padding-top: 100px;
+  }
+
+  .service-hero-buttons {
+    flex-direction: column;
+  }
+
+  .service-hero-buttons .btn {
+    text-align: center;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefit-icon {
+    margin: 0 auto;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .related-cards {
+    grid-template-columns: 1fr;
+  }
+}
