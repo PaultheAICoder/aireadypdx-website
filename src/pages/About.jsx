@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Icons } from '../components/Icons/Icons'
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import './About.css'
 
 function About() {
@@ -35,8 +36,14 @@ function About() {
     navigate('/#contact')
   }
 
+  const breadcrumbItems = [
+    { label: 'Home', path: '/' },
+    { label: 'About', path: null }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="about-hero">
         <div className="container">

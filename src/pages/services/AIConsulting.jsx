@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Icons } from '../../components/Icons/Icons'
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
 import './AIConsulting.css'
 
 function AIConsulting() {
@@ -35,8 +36,15 @@ function AIConsulting() {
     navigate('/#pricing')
   }
 
+  const breadcrumbItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Services', path: '/#services' },
+    { label: 'AI Consulting', path: null }
+  ]
+
   return (
     <>
+      <Breadcrumb items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="service-hero ai-consulting-hero">
         <div className="container">
