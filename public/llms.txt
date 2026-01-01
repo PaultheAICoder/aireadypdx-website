@@ -6,11 +6,10 @@ AI Ready PDX serves the Portland metro and Pacific Northwest region, offering pr
 
 ## Services
 
-- [Strategy & Roadmaps](https://aireadypdx.com/#services): AI opportunity identification, 6-12 month roadmaps, ongoing strategy support
-- [Automation & Agents](https://aireadypdx.com/#services): Internal tools, scheduling, intake forms, AI-assisted reporting
-- [Marketing & Outreach](https://aireadypdx.com/#services): Website optimization, SEO/AEO/GEO, content calendars, ethical outreach
-- [Training & Enablement](https://aireadypdx.com/#services): Executive briefings, staff AI 101, developer bootcamps
-- [Confidential AI](https://aireadypdx.com/#confidential-ai): On-premise deployment, private cloud inference, air-gapped solutions
+- [AI Consulting & Strategy](https://aireadypdx.com/services/ai-consulting): AI readiness assessments, strategic roadmaps, opportunity identification
+- [Workflow Automation](https://aireadypdx.com/services/workflow-automation): Chatbots, voice agents, scheduling automation, process optimization
+- [Employee Training](https://aireadypdx.com/services/employee-training): Executive briefings, team training, agentic coding tools
+- [Confidential AI](https://aireadypdx.com/services/confidential-ai): On-premise deployment, private cloud inference, air-gapped solutions
 
 ## Pricing
 
@@ -34,6 +33,17 @@ AI Ready PDX serves the Portland metro and Pacific Northwest region, offering pr
 - Address: 3855 SW 153rd Drive, Beaverton, OR
 - Website: https://aireadypdx.com
 
+## About
+
+Learn more about AI Ready PDX, our story, values, and frequently asked questions.
+
+- [About AI Ready PDX](https://aireadypdx.com/about): Company background, Vital Enterprises history, core values
+
 ## Optional
 
 - [Full Content](https://aireadypdx.com/llms-full.txt): Complete site content with detailed descriptions
+- [AI Consulting Page](https://aireadypdx.com/services/ai-consulting): Detailed AI consulting services
+- [Workflow Automation Page](https://aireadypdx.com/services/workflow-automation): Detailed automation services
+- [Employee Training Page](https://aireadypdx.com/services/employee-training): Detailed training programs
+- [Confidential AI Page](https://aireadypdx.com/services/confidential-ai): Detailed on-premise solutions
+- [About Page](https://aireadypdx.com/about): Company information and FAQs

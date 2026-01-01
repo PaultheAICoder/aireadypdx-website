@@ -142,6 +142,236 @@ In our 60-90 minute session (just $50 for the first 100 clients), we review how 
 ### Is AI safe for sensitive data like legal or medical records?
 It can be, with the right setup. We offer both on-premise solutions where data never leaves your network, and locked-down cloud environments with private networking. We also train your team on what's safe to use AI for and what should stay in your core systems.
 
+---
+
+## Service Page: AI Consulting & Strategy
+
+URL: https://aireadypdx.com/services/ai-consulting
+
+AI Ready PDX helps Portland-area companies assess their AI readiness, develop strategic roadmaps, and identify opportunities for growth.
+
+### AI Consulting Services
+
+**AI Readiness Assessment**
+Comprehensive evaluation of your current operations, technology stack, and team capabilities to determine where AI can make the biggest impact.
+- 60-90 minute deep-dive consultation
+- 3-5 specific AI opportunities identified
+- ROI estimates for each opportunity
+- Written AI Opportunities Snapshot
+
+**Strategy and Roadmaps**
+Custom AI implementation plans aligned with your business goals, budget, and timeline. Clear milestones with measurable outcomes.
+- Prioritized implementation plan
+- Technology recommendations
+- Budget and resource planning
+- Risk assessment and mitigation
+
+**Opportunity Identification**
+Discover hidden efficiency gains and competitive advantages in your business processes through AI analysis.
+- Process efficiency analysis
+- Automation potential mapping
+- Competitive landscape review
+- Quick win identification
+
+### Why AI Consulting Matters
+
+- 30+ Years of Technology Leadership: Powered by Vital Enterprises with enterprise experience serving 50+ major clients
+- Business-First Approach: AI can reduce administrative overhead by up to 40% for most small businesses
+- Proven Track Record: 73% of businesses plan to increase AI investment in 2025
+- Empower, Not Replace: Clients typically save 10+ hours per week while keeping their team engaged
+
+### AI Consulting Process
+
+1. **Assess**: Comprehensive AI Readiness Assessment to understand your business and identify opportunities
+2. **Strategize**: Custom roadmap with prioritized initiatives and clear milestones
+3. **Implement**: Training, ongoing support, and hands-on assistance for successful adoption
+
+---
+
+## Service Page: Workflow Automation
+
+URL: https://aireadypdx.com/services/workflow-automation
+
+AI Ready PDX helps Portland-area businesses save 10+ hours per week through intelligent chatbots, voice agents, and process automation.
+
+### Workflow Automation Services
+
+**Chatbots and Voice Agents**
+AI-powered conversational interfaces for customer support, appointment booking, and FAQ handling that work 24/7.
+- 24/7 customer response
+- Appointment scheduling
+- Lead qualification
+- Multi-language support
+
+**Process Automation**
+Intelligent automation for repetitive business processes, reducing manual work and eliminating human errors.
+- Scheduling and intake automation
+- Invoice processing
+- Data entry automation
+- Workflow triggers
+
+**Outreach Automation**
+Automated email, voice, and social media outreach to engage customers and generate leads consistently.
+- Email campaign automation
+- Voice agent follow-ups
+- Social media scheduling
+- Lead nurturing sequences
+
+### Benefits of Workflow Automation
+
+- Save 10+ Hours Per Week: Automate routine tasks so your team focuses on high-value work
+- 24/7 Customer Response: AI handles inquiries around the clock, never missing a lead
+- Reduce Human Error: Automated workflows execute consistently without manual mistakes
+- Scale Without Hiring: Handle more customers without adding staff
+
+### Industry Automation Use Cases
+
+- **Field Services**: Automated scheduling, quote follow-ups, and service reminders
+- **Professional Practices**: Patient/client intake, appointment reminders, document requests
+- **Retail and Hospitality**: Order confirmations, reservation management, feedback collection
+
+---
+
+## Service Page: Employee Training
+
+URL: https://aireadypdx.com/services/employee-training
+
+AI Ready PDX offers executive briefings, hands-on training, and ongoing support to help Portland-area organizations adopt AI confidently and safely.
+
+### AI Training Programs
+
+**Executive AI Briefings**
+Strategic overviews for leadership teams covering AI opportunities, risks, and decision frameworks for your industry.
+- 90-minute executive session
+- Industry-specific AI landscape
+- Investment and ROI guidance
+- Competitive positioning insights
+
+**Team Training Sessions**
+Practical, hands-on AI training for your staff, covering tools they can use immediately in their daily work.
+- Role-based curriculum
+- Live tool demonstrations
+- Practice exercises
+- Recorded sessions for reference
+
+**Agentic Coding Tools**
+Training for developers and technical staff on using AI-powered coding assistants and automation tools safely.
+- Claude, Copilot, and Cursor training
+- Code review best practices
+- Security and privacy guidelines
+- Productivity optimization
+
+### Training Philosophy
+
+- **People-First Approach**: AI augments your team's capabilities - it doesn't replace them
+- **Practical, Not Theoretical**: Every session includes hands-on exercises with tools you'll actually use
+- **Safety and Privacy First**: Clear guidelines on what's safe to share with AI tools
+- **Ongoing Support**: Quarterly State of AI updates and email support
+
+### Training Delivery Options
+
+1. **On-Site Training**: Hands-on sessions at your Portland-area location
+2. **Remote Sessions**: Live video training with full interactivity
+3. **Recorded Library**: All sessions recorded for future reference and new team members
+
+---
+
+## Service Page: Confidential AI
+
+URL: https://aireadypdx.com/services/confidential-ai
+
+For organizations with strict data privacy requirements, AI Ready PDX deploys AI solutions where your data never leaves your building.
+
+### Deployment Options
+
+**On-Premise AI Appliances**
+Dedicated AI hardware installed in your facility with complete network isolation.
+- Hardware installed on-site
+- Complete network isolation
+- No external data transmission
+- Full administrative control
+
+**Private Cloud Inference**
+Dedicated cloud instances with private networking and enterprise-grade security.
+- Isolated cloud environment
+- Private VPN connectivity
+- SOC 2 compliant hosting
+- Encrypted data at rest
+
+**Air-Gapped Solutions**
+Completely disconnected systems for maximum security in classified or highly regulated environments.
+- Zero internet connectivity
+- Physical security integration
+- Offline model updates
+- Audit-ready documentation
+
+### Why Choose On-Premise AI
+
+- **Your Data Never Leaves Your Building**: No cloud transmission means no exposure risk
+- **Own Your Intelligence, Don't Rent It**: Build proprietary AI models that become competitive assets
+- **Predictable Costs**: Capital expenditure instead of unpredictable token-based billing
+- **Regulatory Compliance Ready**: Meet HIPAA, legal ethics rules, financial regulations
+
+### Industries Served
+
+- **Legal**: Attorney-client privilege protection, document analysis, research automation
+- **Medical**: HIPAA-compliant clinical documentation, scheduling, administrative tasks
+- **Financial**: Client data protection, SEC/FINRA/banking regulation compliance
+- **Manufacturing**: Proprietary process protection, quality control, predictive maintenance
+
+### Enterprise Security Features
+
+- End-to-end encryption for all data
+- Role-based access controls
+- Complete audit logging
+- Regular security updates and patching
+- Compliance documentation packages
+- Staff training on secure AI usage
+
+---
+
+## About Page
+
+URL: https://aireadypdx.com/about
+
+AI Ready PDX is a Portland-based AI consulting firm helping local businesses and nonprofits adopt artificial intelligence practically.
+
+### Our Story
+
+AI Ready PDX is part of Vital Enterprises, a company with 30+ years of proven technology leadership. We have served 50+ enterprise clients across the technology sector through our family of companies.
+
+Our portfolio includes VTM Group, which has led global technology consortiums for over 30 years, and Novus Labs, with 17 years of experience building complex consumer electronics products for leading brands including Amazon, Google, and Microsoft.
+
+With this foundation of enterprise-level expertise, we created AI Ready PDX to bring the same caliber of technology leadership to Portland-area businesses and nonprofits.
+
+### Our Values
+
+**People-First**
+AI augments human work, creating more value from your existing staff. Clients typically report saving 10+ hours per week while keeping their team engaged and productive.
+
+**Practical**
+We translate AI into practical process improvements, not buzzwords. AI can reduce administrative overhead by up to 40% for most small businesses.
+
+**Privacy-Focused**
+Your data never leaves your building with our on-premise solutions. For organizations with strict compliance requirements, we deploy local AI appliances on your network.
+
+### Frequently Asked Questions
+
+**Who is AI Ready PDX?**
+AI Ready PDX is part of Vital Enterprises, with 30+ years leading global technology consortiums and 17 years building complex products for leading brands. We've served 50+ enterprise clients and now help Portland-area businesses adopt AI practically.
+
+**What kinds of businesses do you work with?**
+We work primarily with small to mid-sized businesses (5-100 employees) and nonprofits across the Portland metro area. Over 80% of our clients are first-time AI adopters.
+
+**Do you offer on-premise AI solutions?**
+Yes. For organizations with strict data privacy requirements, we can deploy local AI appliances on your network where your data never leaves your building.
+
+**What does an AI Readiness Session cover?**
+In our 60-90 minute session ($50 for first 100 clients), we identify 3-5 specific AI opportunities with ROI estimates and provide a written AI Opportunities Snapshot. Clients typically identify $10,000-50,000 in annual savings opportunities.
+
+**Is AI safe for sensitive data?**
+It can be, with the right setup. We offer on-premise solutions where data never leaves your network, and locked-down cloud environments with private networking.
+
 ## Contact Information
 
 - **Email**: hello@aireadypdx.com
