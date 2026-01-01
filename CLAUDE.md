@@ -38,7 +38,7 @@ npm run preview  # Preview production build
 ```css
 --color-primary: #0B3D2E    /* Deep Forest Green */
 --color-secondary: #1F3A5F  /* Slate Blue */
---color-accent: #2BBBAD     /* Teal */
+--color-accent: #1F9F91     /* Teal (WCAG AA Compliant) */
 --color-background: #F4F1EA /* Warm Neutral */
 --color-text: #1E2022       /* Dark Grey */
 ```
